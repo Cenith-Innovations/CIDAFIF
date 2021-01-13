@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Zip",
+        "repositoryURL": "https://github.com/Cenith-Innovations/Zip",
+        "state": {
+          "branch": null,
+          "revision": "159665e395d0552d32770ab6e943a06abf9de923",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
