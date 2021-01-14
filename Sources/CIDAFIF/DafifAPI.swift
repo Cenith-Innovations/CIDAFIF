@@ -85,17 +85,17 @@ public class DafifAPI: NSObject, ObservableObject {
     
     /// Initiates loading already downloaded and unzipped DAFIF
     public static func loadDownloadedData(requiredData: DafifDesired) {
-        CoreDataLoader.loadSomeData(data: requiredData)
+        CoreDataLoader.shared.loadSomeData(data: requiredData)
     }
     
     /// This removes ALL of the data from ALL of the Enities in the DAFIF CoreData model.
     public static func deleteAllData(requiredData: DafifDesired) {
-        CoreDataLoader.deleteData(data: requiredData)
+        CoreDataLoader.shared.deleteData(data: requiredData)
     }
     
     /// Prints the count of all the Dafif CoreData Entities. Used for debugging
     public static func printCoreDataCountToConsole() {
-        CoreDataLoader.printCDCounter()
+        CoreDataLoader.shared.printCDCounter()
     }
     
     /// Gathers all the loaded data associated with the ICAO entered. It gets the Airport Identifier associated with the ICAO entered then searches through the DAFIF for anything that has that identifier.
@@ -143,7 +143,7 @@ public class DafifAPI: NSObject, ObservableObject {
     ///   - icao: Airfields 4 letter ICAO designator. e.g: KBAB
     ///   - runwayLength: Minimum runway length
     /// - Returns: Optional arrays of all the data gathered.
-    public static func getAllInfoForIcaoFilteredByMinRwyLength(icao: String, runwayLength: Int16) -> AirportInfo? {
+    public static func getAllInfoForIcaoFilteredByMinRwyLength(icao: String, runwayLength: Double) -> AirportInfo? {
         guard let airport = Arpt.getArptWithICAO(icao: icao) else { return nil }
         let nav = Nav.getWithAirport(icao: icao)
         let id = airport.arptIdent!
@@ -220,7 +220,7 @@ public class DafifAPI: NSObject, ObservableObject {
     }
     
     
-    static public func getAllRunwaysGreaterThanOrEqualTo(_ length: Int16) -> [Rwy] {
+    static public func getAllRunwaysGreaterThanOrEqualTo(_ length: Double) -> [Rwy] {
         var result: [Rwy] = []
         let fetchRequest = NSFetchRequest<Rwy>(entityName: "Rwy")
         do {
@@ -239,7 +239,7 @@ public class DafifAPI: NSObject, ObservableObject {
     ///   - from: Users location (or wherever you feel like putting here)
     ///   - minRwyLength: Just like the variable name says
     /// - Returns: All the airfield data in coredata for all the airfields
-    public static func getClosestAirportsFilteredByMinRwyLength(from: CLLocation, minRwyLength: Int16) -> [Arpt] {
+    public static func getClosestAirportsFilteredByMinRwyLength(from: CLLocation, minRwyLength: Double) -> [Arpt] {
         var returnList: [Arpt] = []
         guard let airports = Arpt.getAllAirports() else { return [] }
         let reducedList = airports.filter({ $0.icao?.count == 4})

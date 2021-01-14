@@ -2,26 +2,26 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Acom" representedClassName="CIDAFIF.Acom" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="comFreq1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="comFreq1" optional="YES" attributeType="String"/>
         <attribute name="comFreq2" optional="YES" attributeType="String"/>
         <attribute name="comFreq3" optional="YES" attributeType="String"/>
         <attribute name="comFreq4" optional="YES" attributeType="String"/>
         <attribute name="comFreq5" optional="YES" attributeType="String"/>
         <attribute name="commName" optional="YES" attributeType="String"/>
         <attribute name="commType" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="freq1" optional="YES" attributeType="String"/>
         <attribute name="freq2" optional="YES" attributeType="String"/>
         <attribute name="freq3" optional="YES" attributeType="String"/>
         <attribute name="freq4" optional="YES" attributeType="String"/>
         <attribute name="freq5" optional="YES" attributeType="String"/>
-        <attribute name="freqMulti" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="freqMulti" optional="YES" attributeType="String"/>
         <attribute name="freqUnit1" optional="YES" attributeType="String"/>
         <attribute name="freqUnit2" optional="YES" attributeType="String"/>
         <attribute name="freqUnit3" optional="YES" attributeType="String"/>
         <attribute name="freqUnit4" optional="YES" attributeType="String"/>
-        <attribute name="freqUnit5 " optional="YES" attributeType="String"/>
-        <attribute name="multi" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="freqUnit5" optional="YES" attributeType="String"/>
+        <attribute name="multi" optional="YES" attributeType="String"/>
         <attribute name="sec" optional="YES" attributeType="String"/>
         <attribute name="sOprH" optional="YES" attributeType="String"/>
         <attribute name="sym" optional="YES" attributeType="String"/>
@@ -29,32 +29,32 @@
     <entity name="AcomRmk" representedClassName="CIDAFIF.AcomRmk" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
         <attribute name="commType" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="multi " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="multi" optional="YES" attributeType="String"/>
         <attribute name="remark" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AddRwy" representedClassName="CIDAFIF.AddRwy" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="heDtDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="heDtDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="heDtLat" optional="YES" attributeType="String"/>
         <attribute name="heDtLong" optional="YES" attributeType="String"/>
-        <attribute name="heOverrunDis" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="heOverrunDis" optional="YES" attributeType="String"/>
         <attribute name="heOverrunDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="heOverrunDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="heOverrunLat" optional="YES" attributeType="String"/>
         <attribute name="heOverrunLong" optional="YES" attributeType="String"/>
         <attribute name="heSurface" optional="YES" attributeType="String"/>
-        <attribute name="highIdent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="highIdent" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="loDtDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="loDtDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="loDtLat" optional="YES" attributeType="String"/>
         <attribute name="loDtLong" optional="YES" attributeType="String"/>
-        <attribute name="loIdent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="loOverrunDis" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="loIdent" optional="YES" attributeType="String"/>
+        <attribute name="loOverrunDis" optional="YES" attributeType="String"/>
         <attribute name="loOverrunDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="loOverrunDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="loOverrunLat" optional="YES" attributeType="String"/>
@@ -63,22 +63,22 @@
     </entity>
     <entity name="Agear" representedClassName="CIDAFIF.Agear" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="location" optional="YES" attributeType="String"/>
-        <attribute name="rwyIdent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rwyIdent" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Anav" representedClassName="CIDAFIF.Anav" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
         <attribute name="atFld" optional="YES" attributeType="String"/>
         <attribute name="bearing" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="navCtry" optional="YES" attributeType="String"/>
         <attribute name="navIdent" optional="YES" attributeType="String"/>
-        <attribute name="navKeyCd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="navType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="navKeyCd" optional="YES" attributeType="String"/>
+        <attribute name="navType" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcAbsorbingSys" representedClassName="CIDAFIF.AppcAbsorbingSys" syncable="YES" codeGenerationType="class">
         <attribute name="abCode" optional="YES" attributeType="String"/>
@@ -86,7 +86,7 @@
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcAcftCap" representedClassName="CIDAFIF.AppcAcftCap" syncable="YES" codeGenerationType="class">
-        <attribute name="acftCode " optional="YES" attributeType="String"/>
+        <attribute name="acftCode" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcAltitudeDesc" representedClassName="CIDAFIF.AppcAltitudeDesc" syncable="YES" codeGenerationType="class">
         <attribute name="desc" optional="YES" attributeType="String"/>
@@ -138,13 +138,13 @@
     </entity>
     <entity name="AppcBdryType" representedClassName="CIDAFIF.AppcBdryType" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcCcIcao" representedClassName="CIDAFIF.AppcCcIcao" syncable="YES" codeGenerationType="class">
         <attribute name="country" optional="YES" attributeType="String"/>
         <attribute name="countryName" optional="YES" attributeType="String"/>
         <attribute name="icaoRgn" optional="YES" attributeType="String"/>
-        <attribute name="usage " optional="YES" attributeType="String"/>
+        <attribute name="usage" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcComFreqUnit" representedClassName="CIDAFIF.AppcComFreqUnit" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
@@ -160,7 +160,7 @@
     </entity>
     <entity name="AppcDaylightSav" representedClassName="CIDAFIF.AppcDaylightSav" syncable="YES" codeGenerationType="class">
         <attribute name="timeCode" optional="YES" attributeType="String"/>
-        <attribute name="times " optional="YES" attributeType="String"/>
+        <attribute name="times" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcDerivation" representedClassName="CIDAFIF.AppcDerivation" syncable="YES" codeGenerationType="class">
         <attribute name="derivation" optional="YES" attributeType="String"/>
@@ -181,7 +181,7 @@
         <attribute name="description_" optional="YES" attributeType="String"/>
         <attribute name="eefc" optional="YES" attributeType="String"/>
         <attribute name="flip" optional="YES" attributeType="String"/>
-        <attribute name="fuelCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fuelCode" optional="YES" attributeType="String"/>
         <attribute name="nato" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcHeliType" representedClassName="CIDAFIF.AppcHeliType" syncable="YES" codeGenerationType="class">
@@ -189,7 +189,7 @@
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcIlsCat" representedClassName="CIDAFIF.AppcIlsCat" syncable="YES" codeGenerationType="class">
-        <attribute name="cat" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cat" optional="YES" attributeType="String"/>
         <attribute name="description_" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcIlsColctn" representedClassName="CIDAFIF.AppcIlsColctn" syncable="YES" codeGenerationType="class">
@@ -202,11 +202,11 @@
     </entity>
     <entity name="AppcJasu" representedClassName="CIDAFIF.AppcJasu" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="jasuCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="jasuCode" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcLclHorizDatums" representedClassName="CIDAFIF.AppcLclHorizDatums" syncable="YES" codeGenerationType="class">
-        <attribute name="country " optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
         <attribute name="datum" optional="YES" attributeType="String"/>
         <attribute name="datumCode" optional="YES" attributeType="String"/>
     </entity>
@@ -232,7 +232,7 @@
     </entity>
     <entity name="AppcNavType" representedClassName="CIDAFIF.AppcNavType" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcNavUsageCd" representedClassName="CIDAFIF.AppcNavUsageCd" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
@@ -240,7 +240,7 @@
     </entity>
     <entity name="AppcOils" representedClassName="CIDAFIF.AppcOils" syncable="YES" codeGenerationType="class">
         <attribute name="flipNato" optional="YES" attributeType="String"/>
-        <attribute name="gradeType " optional="YES" attributeType="String"/>
+        <attribute name="gradeType" optional="YES" attributeType="String"/>
         <attribute name="oilCode" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcOprAgcy" representedClassName="CIDAFIF.AppcOprAgcy" syncable="YES" codeGenerationType="class">
@@ -250,11 +250,11 @@
     </entity>
     <entity name="AppcPjaOprTime" representedClassName="CIDAFIF.AppcPjaOprTime" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="oprTime" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="oprTime" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcPjaType" representedClassName="CIDAFIF.AppcPjaType" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcPrAcftType" representedClassName="CIDAFIF.AppcPrAcftType" syncable="YES" codeGenerationType="class">
         <attribute name="acftType" optional="YES" attributeType="String"/>
@@ -262,11 +262,11 @@
     </entity>
     <entity name="AppcPrPtType" representedClassName="CIDAFIF.AppcPrPtType" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="ptTy" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ptTy" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcRwyLgtCodes" representedClassName="CIDAFIF.AppcRwyLgtCodes" syncable="YES" codeGenerationType="class">
-        <attribute name="definition " optional="YES" attributeType="String"/>
-        <attribute name="lgtCode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="lgtCode" optional="YES" attributeType="String"/>
         <attribute name="sys" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcRwySfcCodes" representedClassName="CIDAFIF.AppcRwySfcCodes" syncable="YES" codeGenerationType="class">
@@ -287,11 +287,11 @@
     </entity>
     <entity name="AppcTrmNavType" representedClassName="CIDAFIF.AppcTrmNavType" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="nav1Type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="nav1Type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcTrmProc" representedClassName="CIDAFIF.AppcTrmProc" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="proc" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proc" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcTrmTrackCd" representedClassName="CIDAFIF.AppcTrmTrackCd" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
@@ -299,7 +299,7 @@
     </entity>
     <entity name="AppcTrmType" representedClassName="CIDAFIF.AppcTrmType" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcTrmWptDesc1" representedClassName="CIDAFIF.AppcTrmWptDesc1" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
@@ -319,7 +319,7 @@
     </entity>
     <entity name="AppcUsStateCodes" representedClassName="CIDAFIF.AppcUsStateCodes" syncable="YES" codeGenerationType="class">
         <attribute name="ccpv" optional="YES" attributeType="String"/>
-        <attribute name="state " optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AppcWptType" representedClassName="CIDAFIF.AppcWptType" syncable="YES" codeGenerationType="class">
         <attribute name="description_" optional="YES" attributeType="String"/>
@@ -333,8 +333,8 @@
         <attribute name="arfIdent" optional="YES" attributeType="String"/>
         <attribute name="atcRmk" optional="YES" attributeType="String"/>
         <attribute name="center" optional="YES" attributeType="String"/>
-        <attribute name="cntrMult" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cntrMult" optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="eW1" optional="YES" attributeType="String"/>
         <attribute name="eW2" optional="YES" attributeType="String"/>
@@ -351,13 +351,13 @@
     </entity>
     <entity name="ArfFt" representedClassName="CIDAFIF.ArfFt" syncable="YES" codeGenerationType="class">
         <attribute name="arfIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
-        <attribute name="ftNo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ftNo" optional="YES" attributeType="String"/>
         <attribute name="ftType" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="remarks" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
     </entity>
     <entity name="ArfPar" representedClassName="CIDAFIF.ArfPar" syncable="YES" codeGenerationType="class">
         <attribute name="alt1Desc" optional="YES" attributeType="String"/>
@@ -368,7 +368,7 @@
         <attribute name="arfIdent" optional="YES" attributeType="String"/>
         <attribute name="bkpFreq" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="ctry" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="locHdatum" optional="YES" attributeType="String"/>
@@ -387,7 +387,7 @@
     <entity name="ArfPt" representedClassName="CIDAFIF.ArfPt" syncable="YES" codeGenerationType="class">
         <attribute name="arfIdent" optional="YES" attributeType="String"/>
         <attribute name="bearing" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="distance" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
@@ -395,9 +395,9 @@
         <attribute name="navIdent" optional="YES" attributeType="String"/>
         <attribute name="navKeyCd" optional="YES" attributeType="String"/>
         <attribute name="navType" optional="YES" attributeType="String"/>
-        <attribute name="ptIdent " optional="YES" attributeType="String"/>
+        <attribute name="ptIdent" optional="YES" attributeType="String"/>
         <attribute name="ptNavFlag" optional="YES" attributeType="String"/>
-        <attribute name="ptSeqNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ptSeqNbr" optional="YES" attributeType="String"/>
         <attribute name="usage" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -406,16 +406,16 @@
     </entity>
     <entity name="ArfRmk" representedClassName="CIDAFIF.ArfRmk" syncable="YES" codeGenerationType="class">
         <attribute name="arfIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="remarks" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
     </entity>
     <entity name="ArfSch" representedClassName="CIDAFIF.ArfSch" syncable="YES" codeGenerationType="class">
         <attribute name="arfIdent" optional="YES" attributeType="String"/>
         <attribute name="comNo" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="dsn" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
@@ -425,7 +425,7 @@
         <attribute name="arfIdent" optional="YES" attributeType="String"/>
         <attribute name="bearing1" optional="YES" attributeType="String"/>
         <attribute name="bearing2" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="derivation" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
@@ -435,7 +435,7 @@
         <attribute name="navType" optional="YES" attributeType="String"/>
         <attribute name="radius1" optional="YES" attributeType="String"/>
         <attribute name="radius2" optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
         <attribute name="shap" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat0" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -453,10 +453,10 @@
     <entity name="Arpt" representedClassName="CIDAFIF.Arpt" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
         <attribute name="beacon" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="elev" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="elev" optional="YES" attributeType="String"/>
         <attribute name="faaHostId" optional="YES" attributeType="String"/>
-        <attribute name="hydro " optional="YES" attributeType="String"/>
+        <attribute name="hydro" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="locHdatum" optional="YES" attributeType="String"/>
         <attribute name="magVar" optional="YES" attributeType="String"/>
@@ -470,7 +470,7 @@
         <attribute name="stateProv" optional="YES" attributeType="String"/>
         <attribute name="terrain" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
-        <attribute name="wac" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wac" optional="YES" attributeType="String"/>
         <attribute name="wgsDatum" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -487,11 +487,11 @@
         <attribute name="atsIdent" optional="YES" attributeType="String"/>
         <attribute name="bidirect" optional="YES" attributeType="String"/>
         <attribute name="cruiseLevel" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="fixTurn1" optional="YES" attributeType="String"/>
-        <attribute name="fixTurn2 " optional="YES" attributeType="String"/>
+        <attribute name="fixTurn2" optional="YES" attributeType="String"/>
         <attribute name="freqClass" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="inbdCrs" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -502,7 +502,7 @@
         <attribute name="outbdCrs" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="rnp" optional="YES" attributeType="String"/>
         <attribute name="rvsm" optional="YES" attributeType="String"/>
-        <attribute name="seqNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seqNbr" optional="YES" attributeType="String"/>
         <attribute name="status" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="upperLimit" optional="YES" attributeType="String"/>
@@ -525,7 +525,7 @@
         <attribute name="wpt2Desc4" optional="YES" attributeType="String"/>
         <attribute name="wpt2Icao" optional="YES" attributeType="String"/>
         <attribute name="wpt2Ident" optional="YES" attributeType="String"/>
-        <attribute name="wpt2NavType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wpt2NavType" optional="YES" attributeType="String"/>
         <attribute name="wpt2WgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wpt2WgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wpt2WgsLat" optional="YES" attributeType="String"/>
@@ -534,28 +534,28 @@
     <entity name="AtsCtry" representedClassName="CIDAFIF.AtsCtry" syncable="YES" codeGenerationType="class">
         <attribute name="atsIdent" optional="YES" attributeType="String"/>
         <attribute name="ctry" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
-        <attribute name="seqNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seqNbr" optional="YES" attributeType="String"/>
         <attribute name="stateProv" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="AtsRmk" representedClassName="CIDAFIF.AtsRmk" syncable="YES" codeGenerationType="class">
         <attribute name="atsIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="direction" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="remark" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="seqNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
+        <attribute name="seqNbr" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Bdry" representedClassName="CIDAFIF.Bdry" syncable="YES" codeGenerationType="class">
         <attribute name="bdryIdent" optional="YES" attributeType="String"/>
         <attribute name="bearing1" optional="YES" attributeType="String"/>
         <attribute name="bearing2" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="derivation" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -565,9 +565,9 @@
         <attribute name="navType" optional="YES" attributeType="String"/>
         <attribute name="radius1" optional="YES" attributeType="String"/>
         <attribute name="radius2" optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
         <attribute name="shap" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat0" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlat2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -588,8 +588,8 @@
         <attribute name="ctry3" optional="YES" attributeType="String"/>
         <attribute name="ctry4" optional="YES" attributeType="String"/>
         <attribute name="ctry5" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
     </entity>
     <entity name="BdryPar" representedClassName="CIDAFIF.BdryPar" syncable="YES" codeGenerationType="class">
         <attribute name="bdryIdent" optional="YES" attributeType="String"/>
@@ -600,22 +600,22 @@
         <attribute name="commFreq2" optional="YES" attributeType="String"/>
         <attribute name="commName" optional="YES" attributeType="String"/>
         <attribute name="conAuth" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="level" optional="YES" attributeType="String"/>
         <attribute name="locHdatum" optional="YES" attributeType="String"/>
-        <attribute name="loRvsm " optional="YES" attributeType="String"/>
+        <attribute name="loRvsm" optional="YES" attributeType="String"/>
         <attribute name="lowerAlt" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="rnp" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rnp" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="upperAlt" optional="YES" attributeType="String"/>
         <attribute name="upRvsm" optional="YES" attributeType="String"/>
         <attribute name="wgsDatum" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Fueloil" representedClassName="CIDAFIF.Fueloil" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="fuel" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="jasu" optional="YES" attributeType="String"/>
@@ -627,7 +627,7 @@
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
         <attribute name="cityCrossRef" optional="YES" attributeType="String"/>
         <attribute name="clearStatus" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="daylightSave" optional="YES" attributeType="String"/>
         <attribute name="flipPub" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
@@ -638,47 +638,47 @@
         <attribute name="utmGrid" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Hcom" representedClassName="CIDAFIF.Hcom" syncable="YES" codeGenerationType="class">
-        <attribute name="comFreq1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="comFreq1" optional="YES" attributeType="String"/>
         <attribute name="comFreq2" optional="YES" attributeType="String"/>
         <attribute name="comFreq3" optional="YES" attributeType="String"/>
         <attribute name="comFreq4" optional="YES" attributeType="String"/>
         <attribute name="comFreq5" optional="YES" attributeType="String"/>
         <attribute name="commName" optional="YES" attributeType="String"/>
         <attribute name="commType" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="freq1" optional="YES" attributeType="String"/>
         <attribute name="freq2" optional="YES" attributeType="String"/>
         <attribute name="freq3" optional="YES" attributeType="String"/>
         <attribute name="freq4" optional="YES" attributeType="String"/>
         <attribute name="freq5" optional="YES" attributeType="String"/>
-        <attribute name="freqMulti" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="freqMulti" optional="YES" attributeType="String"/>
         <attribute name="freqUnit1" optional="YES" attributeType="String"/>
         <attribute name="freqUnit2" optional="YES" attributeType="String"/>
         <attribute name="freqUnit3" optional="YES" attributeType="String"/>
         <attribute name="freqUnit4" optional="YES" attributeType="String"/>
-        <attribute name="freqUnit5 " optional="YES" attributeType="String"/>
+        <attribute name="freqUnit5" optional="YES" attributeType="String"/>
         <attribute name="heliIdent" optional="YES" attributeType="String"/>
-        <attribute name="multi" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="multi" optional="YES" attributeType="String"/>
         <attribute name="sec" optional="YES" attributeType="String"/>
         <attribute name="sOprH" optional="YES" attributeType="String"/>
         <attribute name="sym" optional="YES" attributeType="String"/>
     </entity>
     <entity name="HcomRmk" representedClassName="CIDAFIF.HcomRmk" syncable="YES" codeGenerationType="class">
         <attribute name="commType" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="freqMulti " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="freqMulti" optional="YES" attributeType="String"/>
         <attribute name="heliIdent" optional="YES" attributeType="String"/>
-        <attribute name="multi" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="multi" optional="YES" attributeType="String"/>
         <attribute name="remark" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Hlpt" representedClassName="CIDAFIF.Hlpt" syncable="YES" codeGenerationType="class">
         <attribute name="beacon" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="elev" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="elev" optional="YES" attributeType="String"/>
         <attribute name="faaHostId" optional="YES" attributeType="String"/>
         <attribute name="heliIdent" optional="YES" attributeType="String"/>
-        <attribute name="hydro " optional="YES" attributeType="String"/>
+        <attribute name="hydro" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="locHdatum" optional="YES" attributeType="String"/>
         <attribute name="magVar" optional="YES" attributeType="String"/>
@@ -686,7 +686,7 @@
         <attribute name="stateProv" optional="YES" attributeType="String"/>
         <attribute name="terrain" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
-        <attribute name="wac" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wac" optional="YES" attributeType="String"/>
         <attribute name="wgsDatum" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -702,28 +702,28 @@
     <entity name="Hnav" representedClassName="CIDAFIF.Hnav" syncable="YES" codeGenerationType="class">
         <attribute name="atFld" optional="YES" attributeType="String"/>
         <attribute name="bearing" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="distance" optional="YES" attributeType="String"/>
         <attribute name="heliIdent" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="navCtry" optional="YES" attributeType="String"/>
         <attribute name="navIdent" optional="YES" attributeType="String"/>
-        <attribute name="navKeyCd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="navType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="navKeyCd" optional="YES" attributeType="String"/>
+        <attribute name="navType" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Hold" representedClassName="CIDAFIF.Hold" syncable="YES" codeGenerationType="class">
-        <attribute name="altOne" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="altOne" optional="YES" attributeType="String"/>
         <attribute name="altTwo" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
-        <attribute name="dup" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="dup" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
-        <attribute name="inbCrs" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="inbCrs" optional="YES" attributeType="String"/>
         <attribute name="length" optional="YES" attributeType="String"/>
         <attribute name="navCtry" optional="YES" attributeType="String"/>
         <attribute name="navIdent" optional="YES" attributeType="String"/>
         <attribute name="navKeyCd" optional="YES" attributeType="String"/>
         <attribute name="navType" optional="YES" attributeType="String"/>
-        <attribute name="speed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="speed" optional="YES" attributeType="String"/>
         <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="trackCd" optional="YES" attributeType="String"/>
         <attribute name="turnDir" optional="YES" attributeType="String"/>
@@ -737,7 +737,7 @@
         <attribute name="compType" optional="YES" attributeType="String"/>
         <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="dmeBias" optional="YES" attributeType="String"/>
-        <attribute name="dmeNP " optional="YES" attributeType="String"/>
+        <attribute name="dmeNP" optional="YES" attributeType="String"/>
         <attribute name="elev" optional="YES" attributeType="String"/>
         <attribute name="freq" optional="YES" attributeType="String"/>
         <attribute name="gsAngle" optional="YES" attributeType="String"/>
@@ -766,7 +766,7 @@
         <attribute name="bdryIdent" optional="YES" attributeType="String"/>
         <attribute name="bearing1" optional="YES" attributeType="String"/>
         <attribute name="bearing2" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="derivation" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -776,9 +776,9 @@
         <attribute name="navType" optional="YES" attributeType="String"/>
         <attribute name="radius1" optional="YES" attributeType="String"/>
         <attribute name="radius2" optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
         <attribute name="shap" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat0" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlat2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -799,8 +799,8 @@
         <attribute name="ctry3" optional="YES" attributeType="String"/>
         <attribute name="ctry4" optional="YES" attributeType="String"/>
         <attribute name="ctry5" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
     </entity>
     <entity name="IrPar" representedClassName="CIDAFIF.IrPar" syncable="YES" codeGenerationType="class">
         <attribute name="bdryIdent" optional="YES" attributeType="String"/>
@@ -811,14 +811,14 @@
         <attribute name="commFreq2" optional="YES" attributeType="String"/>
         <attribute name="commName" optional="YES" attributeType="String"/>
         <attribute name="conAuth" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="level" optional="YES" attributeType="String"/>
         <attribute name="locHdatum" optional="YES" attributeType="String"/>
         <attribute name="lowerAlt" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="rnp" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rnp" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="upperAlt" optional="YES" attributeType="String"/>
         <attribute name="wgsDatum" optional="YES" attributeType="String"/>
     </entity>
@@ -828,7 +828,7 @@
         <attribute name="crsAlt1" optional="YES" attributeType="String"/>
         <attribute name="crsAlt2" optional="YES" attributeType="String"/>
         <attribute name="crsaltDesc" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="enrAlt1" optional="YES" attributeType="String"/>
         <attribute name="enrAlt2" optional="YES" attributeType="String"/>
@@ -839,8 +839,8 @@
         <attribute name="mtrWidthR" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="navCtry" optional="YES" attributeType="String"/>
         <attribute name="navIdent" optional="YES" attributeType="String"/>
-        <attribute name="navKeyCd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="navType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="navKeyCd" optional="YES" attributeType="String"/>
+        <attribute name="navType" optional="YES" attributeType="String"/>
         <attribute name="nxPoint" optional="YES" attributeType="String"/>
         <attribute name="ptIdent" optional="YES" attributeType="String"/>
         <attribute name="ptNavFlag" optional="YES" attributeType="String"/>
@@ -853,17 +853,17 @@
         <attribute name="wgsLong" optional="YES" attributeType="String"/>
     </entity>
     <entity name="MtrOsm" representedClassName="CIDAFIF.MtrOsm" syncable="YES" codeGenerationType="class">
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="mtrIdent" optional="YES" attributeType="String"/>
-        <attribute name="nxPoint " optional="YES" attributeType="String"/>
+        <attribute name="nxPoint" optional="YES" attributeType="String"/>
         <attribute name="ptIdent" optional="YES" attributeType="String"/>
         <attribute name="sector" optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="seqNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
+        <attribute name="seqNbr" optional="YES" attributeType="String"/>
         <attribute name="suasMoaId" optional="YES" attributeType="String"/>
     </entity>
     <entity name="MtrOv" representedClassName="CIDAFIF.MtrOv" syncable="YES" codeGenerationType="class">
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="mtrIdent" optional="YES" attributeType="String"/>
         <attribute name="nxBiSec" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="nxDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -887,11 +887,11 @@
         <attribute name="ptUsage" optional="YES" attributeType="String"/>
         <attribute name="ptWdthL" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="ptWdthR" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
     </entity>
     <entity name="MtrPar" representedClassName="CIDAFIF.MtrPar" syncable="YES" codeGenerationType="class">
         <attribute name="ctry" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="effTimes" optional="YES" attributeType="String"/>
         <attribute name="icaoRegion" optional="YES" attributeType="String"/>
         <attribute name="locHdatum" optional="YES" attributeType="String"/>
@@ -901,16 +901,16 @@
         <attribute name="wgsDatum" optional="YES" attributeType="String"/>
     </entity>
     <entity name="MtrRmk" representedClassName="CIDAFIF.MtrRmk" syncable="YES" codeGenerationType="class">
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="mtrIdent" optional="YES" attributeType="String"/>
         <attribute name="remarks" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Nav" representedClassName="CIDAFIF.Nav" syncable="YES" codeGenerationType="class">
         <attribute name="arptIcao" optional="YES" attributeType="String"/>
         <attribute name="chan" optional="YES" attributeType="String"/>
         <attribute name="ctry" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="dmeElev" optional="YES" attributeType="String"/>
         <attribute name="dmeWgsDlat" optional="YES" attributeType="String"/>
         <attribute name="dmeWgsDlong" optional="YES" attributeType="String"/>
@@ -924,16 +924,16 @@
         <attribute name="magVar" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="navIdent" optional="YES" attributeType="String"/>
-        <attribute name="navKeyCd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="navKeyCd" optional="YES" attributeType="String"/>
         <attribute name="navRange" optional="YES" attributeType="String"/>
         <attribute name="os" optional="YES" attributeType="String"/>
         <attribute name="power" optional="YES" attributeType="String"/>
         <attribute name="rcc" optional="YES" attributeType="String"/>
         <attribute name="slavedVar" optional="YES" attributeType="String"/>
         <attribute name="stateProv" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="usageCd" optional="YES" attributeType="String"/>
-        <attribute name="wac" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wac" optional="YES" attributeType="String"/>
         <attribute name="wgsDatum" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -941,8 +941,8 @@
         <attribute name="wgsLong" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Ortca" representedClassName="CIDAFIF.Ortca" syncable="YES" codeGenerationType="class">
-        <attribute name="alt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="alt" optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="neDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="neDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="neLat" optional="YES" attributeType="String"/>
@@ -951,8 +951,8 @@
         <attribute name="nwDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="nwLat" optional="YES" attributeType="String"/>
         <attribute name="nwLong" optional="YES" attributeType="String"/>
-        <attribute name="ortcaId " optional="YES" attributeType="String"/>
-        <attribute name="ortcaIdent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ortcaId" optional="YES" attributeType="String"/>
+        <attribute name="ortcaIdent" optional="YES" attributeType="String"/>
         <attribute name="seDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="seDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="seLat" optional="YES" attributeType="String"/>
@@ -965,7 +965,7 @@
     <entity name="Pad" representedClassName="CIDAFIF.Pad" syncable="YES" codeGenerationType="class">
         <attribute name="acType" optional="YES" attributeType="String"/>
         <attribute name="cldRwy" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="heElev" optional="YES" attributeType="String"/>
         <attribute name="heliIdent" optional="YES" attributeType="String"/>
         <attribute name="heSlope" optional="YES" attributeType="String"/>
@@ -980,7 +980,7 @@
         <attribute name="hlgtSys2" optional="YES" attributeType="String"/>
         <attribute name="hlgtSys3" optional="YES" attributeType="String"/>
         <attribute name="leElev" optional="YES" attributeType="String"/>
-        <attribute name="length" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="length" optional="YES" attributeType="String"/>
         <attribute name="leSlope" optional="YES" attributeType="String"/>
         <attribute name="leWgsDlat" optional="YES" attributeType="String"/>
         <attribute name="leWgsDlong" optional="YES" attributeType="String"/>
@@ -995,14 +995,14 @@
         <attribute name="lowHdg" optional="YES" attributeType="String"/>
         <attribute name="lowIdent" optional="YES" attributeType="String"/>
         <attribute name="lowTrue" optional="YES" attributeType="String"/>
-        <attribute name="padId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="seqNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="padId" optional="YES" attributeType="String"/>
+        <attribute name="seqNbr" optional="YES" attributeType="String"/>
         <attribute name="surface" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsLat" optional="YES" attributeType="String"/>
         <attribute name="wgsLong" optional="YES" attributeType="String"/>
-        <attribute name="width" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="width" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Papp" representedClassName="CIDAFIF.Papp" syncable="YES" codeGenerationType="class">
         <attribute name="apd" optional="YES" attributeType="String"/>
@@ -1038,7 +1038,7 @@
     <entity name="Pja" representedClassName="CIDAFIF.Pja" syncable="YES" codeGenerationType="class">
         <attribute name="bearing1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="bearing2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="derivation" optional="YES" attributeType="String"/>
         <attribute name="distance1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="distance2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -1046,14 +1046,14 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="navCtry" optional="YES" attributeType="String"/>
         <attribute name="navIdent" optional="YES" attributeType="String"/>
-        <attribute name="navKeyCd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="navType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="navKeyCd" optional="YES" attributeType="String"/>
+        <attribute name="navType" optional="YES" attributeType="String"/>
         <attribute name="pjaIdent" optional="YES" attributeType="String"/>
         <attribute name="radius1" optional="YES" attributeType="String"/>
         <attribute name="radius2" optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
         <attribute name="shap" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat0" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlat1" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat2" optional="YES" attributeType="String"/>
@@ -1069,12 +1069,12 @@
     </entity>
     <entity name="PjaPar" representedClassName="CIDAFIF.PjaPar" syncable="YES" codeGenerationType="class">
         <attribute name="alt" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="effTimes " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="effTimes" optional="YES" attributeType="String"/>
         <attribute name="hours" optional="YES" attributeType="String"/>
         <attribute name="icaoRegion" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="oprTime" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="oprTime" optional="YES" attributeType="String"/>
         <attribute name="pjaIdent" optional="YES" attributeType="String"/>
         <attribute name="stateProv" optional="YES" attributeType="String"/>
     </entity>
@@ -1115,13 +1115,13 @@
     <entity name="Rwy" representedClassName="CIDAFIF.Rwy" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
         <attribute name="cldRwy" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
-        <attribute name="heDt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="heDt" optional="YES" attributeType="String"/>
         <attribute name="heDtElev" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="heElev" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="helandDis" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="helandDis" optional="YES" attributeType="String"/>
         <attribute name="heSlope" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="heTakeoff" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="heTakeoff" optional="YES" attributeType="String"/>
         <attribute name="heTdze" optional="YES" attributeType="String"/>
         <attribute name="heTrueHdg" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="heWgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -1130,30 +1130,30 @@
         <attribute name="heWgsLong" optional="YES" attributeType="String"/>
         <attribute name="highHdg" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="highIdent" optional="YES" attributeType="String"/>
-        <attribute name="hlgtSys1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="hlgtSys2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="hlgtSys3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="hlgtSys1" optional="YES" attributeType="String"/>
+        <attribute name="hlgtSys2" optional="YES" attributeType="String"/>
+        <attribute name="hlgtSys3" optional="YES" attributeType="String"/>
         <attribute name="hlgtSys4" optional="YES" attributeType="String"/>
         <attribute name="hlgtSys5" optional="YES" attributeType="String"/>
         <attribute name="hlgtSys6" optional="YES" attributeType="String"/>
         <attribute name="hlgtSys7" optional="YES" attributeType="String"/>
         <attribute name="hlgtSys8" optional="YES" attributeType="String"/>
-        <attribute name="leDt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leDt" optional="YES" attributeType="String"/>
         <attribute name="leDtElev" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="leElev" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="lelandDis" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="length" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lelandDis" optional="YES" attributeType="String"/>
+        <attribute name="length" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="leSlope" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="leTakeoff" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="leTakeoff" optional="YES" attributeType="String"/>
         <attribute name="leTdze" optional="YES" attributeType="String"/>
         <attribute name="leTrueHdg" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="leWgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="leWgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="leWgsLat" optional="YES" attributeType="String"/>
         <attribute name="leWgsLong" optional="YES" attributeType="String"/>
-        <attribute name="llgtSys1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="llgtSys2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="llgtSys3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="llgtSys1" optional="YES" attributeType="String"/>
+        <attribute name="llgtSys2" optional="YES" attributeType="String"/>
+        <attribute name="llgtSys3" optional="YES" attributeType="String"/>
         <attribute name="llgtSys4" optional="YES" attributeType="String"/>
         <attribute name="llgtSys5" optional="YES" attributeType="String"/>
         <attribute name="llgtSys6" optional="YES" attributeType="String"/>
@@ -1162,13 +1162,13 @@
         <attribute name="lowHdg" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="lowIdent" optional="YES" attributeType="String"/>
         <attribute name="pcn" optional="YES" attributeType="String"/>
-        <attribute name="rwyWidth" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rwyWidth" optional="YES" attributeType="String"/>
         <attribute name="surface" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Suas" representedClassName="CIDAFIF.Suas" syncable="YES" codeGenerationType="class">
         <attribute name="bearing1" optional="YES" attributeType="String"/>
         <attribute name="bearing2" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="derivation" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -1179,7 +1179,7 @@
         <attribute name="radius1" optional="YES" attributeType="String"/>
         <attribute name="radius2" optional="YES" attributeType="String"/>
         <attribute name="sector" optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
         <attribute name="shap" optional="YES" attributeType="String"/>
         <attribute name="suasIdent" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
@@ -1201,14 +1201,14 @@
         <attribute name="ctry2" optional="YES" attributeType="String"/>
         <attribute name="ctry3" optional="YES" attributeType="String"/>
         <attribute name="ctry4" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="sector" optional="YES" attributeType="String"/>
         <attribute name="suasIdent" optional="YES" attributeType="String"/>
     </entity>
     <entity name="SuasNote" representedClassName="CIDAFIF.SuasNote" syncable="YES" codeGenerationType="class">
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
-        <attribute name="noteNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="noteNbr" optional="YES" attributeType="String"/>
         <attribute name="noteType" optional="YES" attributeType="String"/>
         <attribute name="remarks" optional="YES" attributeType="String"/>
         <attribute name="sector" optional="YES" attributeType="String"/>
@@ -1217,8 +1217,8 @@
     <entity name="SuasPar" representedClassName="CIDAFIF.SuasPar" syncable="YES" codeGenerationType="class">
         <attribute name="commName" optional="YES" attributeType="String"/>
         <attribute name="conAgcy" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="effDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="effDate" optional="YES" attributeType="String"/>
         <attribute name="effTimes" optional="YES" attributeType="String"/>
         <attribute name="freq1" optional="YES" attributeType="String"/>
         <attribute name="freq2" optional="YES" attributeType="String"/>
@@ -1236,24 +1236,24 @@
     </entity>
     <entity name="SvcRmk" representedClassName="CIDAFIF.SvcRmk" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="remarks" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <entity name="TrmClb" representedClassName="CIDAFIF.TrmClb" syncable="YES" codeGenerationType="class">
-        <attribute name="alt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="alt" optional="YES" attributeType="String"/>
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
-        <attribute name="desig" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="desig" optional="YES" attributeType="String"/>
         <attribute name="ftnote" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
-        <attribute name="knots" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="occNo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="proc" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="rateDesc" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="rwyId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="knots" optional="YES" attributeType="String"/>
+        <attribute name="occNo" optional="YES" attributeType="String"/>
+        <attribute name="proc" optional="YES" attributeType="String"/>
+        <attribute name="rateDesc" optional="YES" attributeType="String"/>
+        <attribute name="rwyId" optional="YES" attributeType="String"/>
         <attribute name="trmIdent" optional="YES" attributeType="String"/>
     </entity>
     <entity name="TrmFdr" representedClassName="CIDAFIF.TrmFdr" syncable="YES" codeGenerationType="class">
@@ -1283,52 +1283,52 @@
     <entity name="TrmMin" representedClassName="CIDAFIF.TrmMin" syncable="YES" codeGenerationType="class">
         <attribute name="appType" optional="YES" attributeType="String"/>
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="catADh" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="catAHa" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catADh" optional="YES" attributeType="String"/>
+        <attribute name="catAHa" optional="YES" attributeType="String"/>
         <attribute name="catARv" optional="YES" attributeType="String"/>
-        <attribute name="catAWxCl" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catAWxCl" optional="YES" attributeType="String"/>
         <attribute name="catAWxPv" optional="YES" attributeType="String"/>
-        <attribute name="catBDh" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="catBHa" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catBDh" optional="YES" attributeType="String"/>
+        <attribute name="catBHa" optional="YES" attributeType="String"/>
         <attribute name="catBRv" optional="YES" attributeType="String"/>
-        <attribute name="catBWxCl" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catBWxCl" optional="YES" attributeType="String"/>
         <attribute name="catBWxPv" optional="YES" attributeType="String"/>
-        <attribute name="catCDh" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="catCHa" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catCDh" optional="YES" attributeType="String"/>
+        <attribute name="catCHa" optional="YES" attributeType="String"/>
         <attribute name="catCRv" optional="YES" attributeType="String"/>
-        <attribute name="catCWxCl" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catCWxCl" optional="YES" attributeType="String"/>
         <attribute name="catCWxPv" optional="YES" attributeType="String"/>
-        <attribute name="catDDh" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="catDHa" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catDDh" optional="YES" attributeType="String"/>
+        <attribute name="catDHa" optional="YES" attributeType="String"/>
         <attribute name="catDRv" optional="YES" attributeType="String"/>
-        <attribute name="catDWxCl" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catDWxCl" optional="YES" attributeType="String"/>
         <attribute name="catDWxPv" optional="YES" attributeType="String"/>
         <attribute name="catEDh" optional="YES" attributeType="String"/>
         <attribute name="catEHa" optional="YES" attributeType="String"/>
         <attribute name="catERv" optional="YES" attributeType="String"/>
         <attribute name="catEWxCl" optional="YES" attributeType="String"/>
         <attribute name="catEWxPv" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="minRmk" optional="YES" attributeType="String"/>
-        <attribute name="proc" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proc" optional="YES" attributeType="String"/>
         <attribute name="trmIdent" optional="YES" attributeType="String"/>
     </entity>
     <entity name="TrmMsa" representedClassName="CIDAFIF.TrmMsa" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="navCtry" optional="YES" attributeType="String"/>
         <attribute name="navIdent" optional="YES" attributeType="String"/>
         <attribute name="navKeyCd" optional="YES" attributeType="String"/>
         <attribute name="navType" optional="YES" attributeType="String"/>
-        <attribute name="proc" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="secAlt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="secBear1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proc" optional="YES" attributeType="String"/>
+        <attribute name="secAlt" optional="YES" attributeType="String"/>
+        <attribute name="secBear1" optional="YES" attributeType="String"/>
         <attribute name="secBear2" optional="YES" attributeType="String"/>
-        <attribute name="secMile1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="secMile2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="secNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="secMile1" optional="YES" attributeType="String"/>
+        <attribute name="secMile2" optional="YES" attributeType="String"/>
+        <attribute name="secNbr" optional="YES" attributeType="String"/>
         <attribute name="trmIdent" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -1339,29 +1339,29 @@
     </entity>
     <entity name="TrmPar" representedClassName="CIDAFIF.TrmPar" syncable="YES" codeGenerationType="class">
         <attribute name="altMin" optional="YES" attributeType="String"/>
-        <attribute name="amdtNo" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="amdtNo" optional="YES" attributeType="String"/>
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="esAlt" optional="YES" attributeType="String"/>
         <attribute name="hostCtryAuth" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
-        <attribute name="julianDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="julianDate" optional="YES" attributeType="String"/>
         <attribute name="opr" optional="YES" attributeType="String"/>
-        <attribute name="proc" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="rteTypeQual " optional="YES" attributeType="String"/>
-        <attribute name="tranAlt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="tranLvl" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proc" optional="YES" attributeType="String"/>
+        <attribute name="rteTypeQual" optional="YES" attributeType="String"/>
+        <attribute name="tranAlt" optional="YES" attributeType="String"/>
+        <attribute name="tranLvl" optional="YES" attributeType="String"/>
         <attribute name="trmIdent" optional="YES" attributeType="String"/>
     </entity>
     <entity name="TrmRmk" representedClassName="CIDAFIF.TrmRmk" syncable="YES" codeGenerationType="class">
         <attribute name="appType" optional="YES" attributeType="String"/>
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
-        <attribute name="proc" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proc" optional="YES" attributeType="String"/>
         <attribute name="remarks" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="rmkType " optional="YES" attributeType="String"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
+        <attribute name="rmkType" optional="YES" attributeType="String"/>
         <attribute name="trmIdent" optional="YES" attributeType="String"/>
     </entity>
     <entity name="TrmSeg" representedClassName="CIDAFIF.TrmSeg" syncable="YES" codeGenerationType="class">
@@ -1369,7 +1369,7 @@
         <attribute name="altOne" optional="YES" attributeType="String"/>
         <attribute name="altTwo" optional="YES" attributeType="String"/>
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="distance" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="magCrs" optional="YES" attributeType="String"/>
@@ -1403,21 +1403,21 @@
         <attribute name="nav2WgsDlong" optional="YES" attributeType="String"/>
         <attribute name="nav2WgsLat" optional="YES" attributeType="String"/>
         <attribute name="nav2WgsLong" optional="YES" attributeType="String"/>
-        <attribute name="proc" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proc" optional="YES" attributeType="String"/>
         <attribute name="rnp" optional="YES" attributeType="String"/>
-        <attribute name="seqNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seqNbr" optional="YES" attributeType="String"/>
         <attribute name="speed" optional="YES" attributeType="String"/>
         <attribute name="speed2" optional="YES" attributeType="String"/>
         <attribute name="speedAc" optional="YES" attributeType="String"/>
         <attribute name="speedAc2" optional="YES" attributeType="String"/>
         <attribute name="speedAlt" optional="YES" attributeType="String"/>
         <attribute name="speedAlt2" optional="YES" attributeType="String"/>
-        <attribute name="tch " optional="YES" attributeType="String"/>
+        <attribute name="tch" optional="YES" attributeType="String"/>
         <attribute name="trackCd" optional="YES" attributeType="String"/>
         <attribute name="transition" optional="YES" attributeType="String"/>
         <attribute name="trmIdent" optional="YES" attributeType="String"/>
         <attribute name="turnDir" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="vnav" optional="YES" attributeType="String"/>
         <attribute name="wptCtry" optional="YES" attributeType="String"/>
         <attribute name="wptDesc1" optional="YES" attributeType="String"/>
@@ -1435,7 +1435,7 @@
         <attribute name="bdryIdent" optional="YES" attributeType="String"/>
         <attribute name="bearing1" optional="YES" attributeType="String"/>
         <attribute name="bearing2" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="derivation" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
@@ -1445,9 +1445,9 @@
         <attribute name="navType" optional="YES" attributeType="String"/>
         <attribute name="radius1" optional="YES" attributeType="String"/>
         <attribute name="radius2" optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
         <attribute name="shap" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat0" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlat2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -1470,22 +1470,22 @@
         <attribute name="commFreq2" optional="YES" attributeType="String"/>
         <attribute name="commName" optional="YES" attributeType="String"/>
         <attribute name="conAuth" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
         <attribute name="level" optional="YES" attributeType="String"/>
         <attribute name="locHdatum" optional="YES" attributeType="String"/>
         <attribute name="lowerAlt" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="rnp" optional="YES" attributeType="String"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="upperAlt" optional="YES" attributeType="String"/>
         <attribute name="wgsDatum" optional="YES" attributeType="String"/>
     </entity>
     <entity name="VfrRte" representedClassName="CIDAFIF.VfrRte" syncable="YES" codeGenerationType="class">
         <attribute name="cityCrossRef" optional="YES" attributeType="String"/>
         <attribute name="ctry" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
-        <attribute name="elev" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
+        <attribute name="elev" optional="YES" attributeType="String"/>
         <attribute name="faaHostId" optional="YES" attributeType="String"/>
         <attribute name="heliIdent" optional="YES" attributeType="String"/>
         <attribute name="heliName" optional="YES" attributeType="String"/>
@@ -1500,16 +1500,16 @@
         <attribute name="wgsLong" optional="YES" attributeType="String"/>
     </entity>
     <entity name="VfrRteRmk" representedClassName="CIDAFIF.VfrRteRmk" syncable="YES" codeGenerationType="class">
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="heliIdent" optional="YES" attributeType="String"/>
         <attribute name="remarks" optional="YES" attributeType="String"/>
-        <attribute name="rmkSeq" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmkSeq" optional="YES" attributeType="String"/>
     </entity>
     <entity name="VfrRteSeg" representedClassName="CIDAFIF.VfrRteSeg" syncable="YES" codeGenerationType="class">
-        <attribute name="alt" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="alt" optional="YES" attributeType="String"/>
         <attribute name="altDesc" optional="YES" attributeType="String"/>
         <attribute name="atHeli" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate " optional="YES" attributeType="String"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="heliIdent" optional="YES" attributeType="String"/>
         <attribute name="magCrs" optional="YES" attributeType="String"/>
         <attribute name="pathCode" optional="YES" attributeType="String"/>
@@ -1529,17 +1529,17 @@
         <attribute name="ptWgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="ptWgsLat" optional="YES" attributeType="String"/>
         <attribute name="ptWgsLong" optional="YES" attributeType="String"/>
-        <attribute name="rteIdent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rteIdent" optional="YES" attributeType="String"/>
         <attribute name="rteName" optional="YES" attributeType="String"/>
         <attribute name="segName" optional="YES" attributeType="String"/>
-        <attribute name="segNbr" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="segNbr" optional="YES" attributeType="String"/>
         <attribute name="turnDir" optional="YES" attributeType="String"/>
         <attribute name="utmGrid" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Wpt" representedClassName="CIDAFIF.Wpt" syncable="YES" codeGenerationType="class">
         <attribute name="bearing" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="ctry" optional="YES" attributeType="String"/>
-        <attribute name="cycleDate" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cycleDate" optional="YES" attributeType="String"/>
         <attribute name="desc" optional="YES" attributeType="String"/>
         <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="icao" optional="YES" attributeType="String"/>
@@ -1547,14 +1547,14 @@
         <attribute name="magVar" optional="YES" attributeType="String"/>
         <attribute name="navCtry" optional="YES" attributeType="String"/>
         <attribute name="navIdent" optional="YES" attributeType="String"/>
-        <attribute name="navKeyCd" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="navType" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="rwyIcao " optional="YES" attributeType="String"/>
+        <attribute name="navKeyCd" optional="YES" attributeType="String"/>
+        <attribute name="navType" optional="YES" attributeType="String"/>
+        <attribute name="rwyIcao" optional="YES" attributeType="String"/>
         <attribute name="rwyId" optional="YES" attributeType="String"/>
-        <attribute name="stateProv" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="stateProv" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="usageCd" optional="YES" attributeType="String"/>
-        <attribute name="wac" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wac" optional="YES" attributeType="String"/>
         <attribute name="wgsDatum" optional="YES" attributeType="String"/>
         <attribute name="wgsDlat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wgsDlong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -1565,128 +1565,128 @@
         <attribute name="wptRvsm" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Acom" positionX="160" positionY="192" width="128" height="389"/>
-        <element name="AcomRmk" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="AddRwy" positionX="160" positionY="192" width="128" height="404"/>
-        <element name="Agear" positionX="160" positionY="192" width="128" height="104"/>
-        <element name="Anav" positionX="160" positionY="192" width="128" height="179"/>
-        <element name="AppcAbsorbingSys" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcAcftCap" positionX="160" positionY="192" width="128" height="44"/>
-        <element name="AppcAltitudeDesc" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcArDir" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcArptType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcArType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcArUsageCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsFreqClass" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsStatus" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsWptDesc1" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsWptDesc2" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsWptDesc3" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsWptDesc4" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcBdryType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="Pja" positionX="160" positionY="192" width="128" height="479"/>
+        <element name="AppcFluids" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="SuasPar" positionX="160" positionY="192" width="128" height="299"/>
         <element name="AppcCcIcao" positionX="160" positionY="192" width="128" height="89"/>
+        <element name="Ils" positionX="160" positionY="192" width="128" height="479"/>
+        <element name="Anav" positionX="160" positionY="192" width="128" height="179"/>
+        <element name="Nav" positionX="160" positionY="192" width="128" height="509"/>
+        <element name="TrmMsa" positionX="160" positionY="192" width="128" height="344"/>
+        <element name="AppcSuasWx" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcEngagingDev" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="ArfAtc" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="AppcHeliType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AtsRmk" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="AppcDerivation" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsStatus" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="SuasCtry" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="IrCtry" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="Rwy" positionX="160" positionY="192" width="128" height="794"/>
+        <element name="ArfFt" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="SuasNote" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="AppcAtsType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsFreqClass" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcArUsageCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="TrmRmk" positionX="160" positionY="192" width="128" height="164"/>
+        <element name="Hnav" positionX="160" positionY="192" width="128" height="179"/>
+        <element name="AppcMtrCrsAlt" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="Bdry" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="Hold" positionX="160" positionY="192" width="128" height="284"/>
+        <element name="PrPar" positionX="160" positionY="192" width="128" height="254"/>
+        <element name="Hlpt" positionX="160" positionY="192" width="128" height="314"/>
+        <element name="AppcArptType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="IrPar" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="VfrRte" positionX="160" positionY="192" width="128" height="269"/>
+        <element name="HlptRmk" positionX="160" positionY="192" width="128" height="89"/>
+        <element name="BdryPar" positionX="160" positionY="192" width="128" height="329"/>
+        <element name="Pad" positionX="160" positionY="192" width="128" height="629"/>
+        <element name="MtrPar" positionX="160" positionY="192" width="128" height="164"/>
+        <element name="ArfSch" positionX="160" positionY="192" width="128" height="134"/>
+        <element name="AppcAtsWptDesc3" positionX="160" positionY="192" width="128" height="59"/>
         <element name="AppcComFreqUnit" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsWptDesc1" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="TrmSeg" positionX="160" positionY="192" width="128" height="1004"/>
+        <element name="Ats" positionX="160" positionY="192" width="128" height="719"/>
+        <element name="Suas" positionX="160" positionY="192" width="128" height="464"/>
+        <element name="AcomRmk" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="Agear" positionX="160" positionY="192" width="128" height="104"/>
+        <element name="TzPar" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="AppcFuelCodes" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="AppcTrmWptDesc1" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="Ortca" positionX="160" positionY="192" width="128" height="329"/>
+        <element name="AppcTrmWptDesc2" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="MtrOsm" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="AppcPjaType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcPjaOprTime" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmNavType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="Tz" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="PjaPar" positionX="160" positionY="192" width="128" height="164"/>
+        <element name="AppcAtsWptDesc4" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="Arpt" positionX="160" positionY="192" width="128" height="404"/>
+        <element name="ArfPt" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="Fueloil" positionX="160" positionY="192" width="128" height="134"/>
+        <element name="AppcTrmWptDesc3" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcUsStateCodes" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmWptDesc4" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmProc" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="Papp" positionX="160" positionY="192" width="128" height="464"/>
+        <element name="Pr" positionX="160" positionY="192" width="128" height="254"/>
+        <element name="TrmPar" positionX="160" positionY="192" width="128" height="239"/>
+        <element name="VfrRteRmk" positionX="160" positionY="192" width="128" height="89"/>
+        <element name="Gen" positionX="160" positionY="192" width="128" height="224"/>
+        <element name="Wpt" positionX="160" positionY="192" width="128" height="419"/>
+        <element name="AppcAltitudeDesc" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="TrmClb" positionX="160" positionY="192" width="128" height="209"/>
+        <element name="VfrRteSeg" positionX="160" positionY="192" width="128" height="464"/>
+        <element name="AppcAcftCap" positionX="160" positionY="192" width="128" height="44"/>
+        <element name="AppcNavStatus" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="Ir" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="Hcom" positionX="160" positionY="192" width="128" height="389"/>
+        <element name="AddRwy" positionX="160" positionY="192" width="128" height="404"/>
+        <element name="AppcAbsorbingSys" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcRwySfcCodes" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="TrmFdr" positionX="160" positionY="192" width="128" height="359"/>
         <element name="AppcComSymbols" positionX="160" positionY="192" width="128" height="59"/>
         <element name="AppcComType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcDaylightSav" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcDerivation" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcEngagingDev" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcFluids" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcFuelCodes" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="AppcHeliType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcIlsCat" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcIlsColctn" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcIlsCompType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcJasu" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcLclHorizDatums" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcLevel" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcMtrCrsAlt" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcMtrUsageCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcNavRcc" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcNavStatus" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcNavType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcNavUsageCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcOils" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcOprAgcy" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcPjaOprTime" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcPjaType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcPrAcftType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcPrPtType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcRwyLgtCodes" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcRwySfcCodes" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcShape" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcSuasType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcSuasWx" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmNavType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmProc" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmTrackCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmWptDesc1" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmWptDesc2" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmWptDesc3" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmWptDesc4" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcUsStateCodes" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcWptType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcWptUsageCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="ArfAtc" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="ArfFt" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="ArfPar" positionX="160" positionY="192" width="128" height="374"/>
-        <element name="ArfPt" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="ArfRmk" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="ArfSch" positionX="160" positionY="192" width="128" height="134"/>
-        <element name="ArfSeg" positionX="160" positionY="192" width="128" height="434"/>
-        <element name="Arpt" positionX="160" positionY="192" width="128" height="404"/>
-        <element name="ArptRmk" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="Ats" positionX="160" positionY="192" width="128" height="719"/>
-        <element name="AtsCtry" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="AtsRmk" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="Bdry" positionX="160" positionY="192" width="128" height="449"/>
         <element name="BdryCtry" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="BdryPar" positionX="160" positionY="192" width="128" height="329"/>
-        <element name="Fueloil" positionX="160" positionY="192" width="128" height="134"/>
-        <element name="Gen" positionX="160" positionY="192" width="128" height="224"/>
-        <element name="Hcom" positionX="160" positionY="192" width="128" height="389"/>
-        <element name="HcomRmk" positionX="160" positionY="192" width="128" height="134"/>
-        <element name="Hlpt" positionX="160" positionY="192" width="128" height="314"/>
-        <element name="HlptRmk" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="Hnav" positionX="160" positionY="192" width="128" height="179"/>
-        <element name="Hold" positionX="160" positionY="192" width="128" height="284"/>
-        <element name="Ils" positionX="160" positionY="192" width="128" height="479"/>
-        <element name="Ir" positionX="160" positionY="192" width="128" height="449"/>
-        <element name="IrCtry" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="IrPar" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="Mtr" positionX="160" positionY="192" width="128" height="449"/>
-        <element name="MtrOsm" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="MtrOv" positionX="160" positionY="192" width="128" height="404"/>
-        <element name="MtrPar" positionX="160" positionY="192" width="128" height="164"/>
+        <element name="AppcNavType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AtsCtry" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="AppcDaylightSav" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcLclHorizDatums" positionX="160" positionY="192" width="128" height="74"/>
         <element name="MtrRmk" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="Nav" positionX="160" positionY="192" width="128" height="509"/>
-        <element name="Ortca" positionX="160" positionY="192" width="128" height="329"/>
-        <element name="Pad" positionX="160" positionY="192" width="128" height="629"/>
-        <element name="Papp" positionX="160" positionY="192" width="128" height="464"/>
-        <element name="Pja" positionX="160" positionY="192" width="128" height="479"/>
-        <element name="PjaPar" positionX="160" positionY="192" width="128" height="164"/>
-        <element name="Pr" positionX="160" positionY="192" width="128" height="254"/>
-        <element name="PrPar" positionX="160" positionY="192" width="128" height="254"/>
-        <element name="Rwy" positionX="160" positionY="192" width="128" height="794"/>
-        <element name="Suas" positionX="160" positionY="192" width="128" height="464"/>
-        <element name="SuasCtry" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="SuasNote" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="SuasPar" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="SvcRmk" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="TrmClb" positionX="160" positionY="192" width="128" height="209"/>
-        <element name="TrmFdr" positionX="160" positionY="192" width="128" height="359"/>
+        <element name="AppcAtsWptDesc2" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcMtrUsageCd" positionX="160" positionY="192" width="128" height="59"/>
         <element name="TrmMin" positionX="160" positionY="192" width="128" height="509"/>
-        <element name="TrmMsa" positionX="160" positionY="192" width="128" height="344"/>
-        <element name="TrmPar" positionX="160" positionY="192" width="128" height="239"/>
-        <element name="TrmRmk" positionX="160" positionY="192" width="128" height="164"/>
-        <element name="TrmSeg" positionX="160" positionY="192" width="128" height="1004"/>
-        <element name="Tz" positionX="160" positionY="192" width="128" height="449"/>
-        <element name="TzPar" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="VfrRte" positionX="160" positionY="192" width="128" height="269"/>
-        <element name="VfrRteRmk" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="VfrRteSeg" positionX="160" positionY="192" width="128" height="464"/>
-        <element name="Wpt" positionX="160" positionY="192" width="128" height="419"/>
+        <element name="AppcPrAcftType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcArType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="ArfPar" positionX="160" positionY="192" width="128" height="374"/>
+        <element name="Mtr" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="AppcIlsCat" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcSuasType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="HcomRmk" positionX="160" positionY="192" width="128" height="134"/>
+        <element name="AppcRwyLgtCodes" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcIlsCompType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmTrackCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcNavUsageCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcJasu" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="MtrOv" positionX="160" positionY="192" width="128" height="404"/>
+        <element name="AppcIlsColctn" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcOils" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcWptUsageCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="ArfSeg" positionX="160" positionY="192" width="128" height="434"/>
+        <element name="ArfRmk" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="SvcRmk" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="AppcPrPtType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcOprAgcy" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcBdryType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcArDir" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcShape" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcWptType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="Acom" positionX="160" positionY="192" width="128" height="389"/>
+        <element name="AppcNavRcc" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcLevel" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="ArptRmk" positionX="160" positionY="192" width="128" height="89"/>
     </elements>
 </model>

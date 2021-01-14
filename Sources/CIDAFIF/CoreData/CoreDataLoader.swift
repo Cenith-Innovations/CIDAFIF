@@ -32,30 +32,31 @@ public class CoreDataLoader: ObservableObject, CoreDataUtilities {
         return counter
     }
     
-    public static func loadSomeData(data: DafifDesired) {
+    public func loadSomeData(data: DafifDesired) {
         let deleteGroup = DispatchGroup()
         deleteGroup.enter()
-        CoreDataLoader.deleteData(data: data)
+        self.deleteData(data: data)
         deleteGroup.leave()
-        pc.performBackgroundTask({ (moc) in
-            CoreDataLoader.shared.zeroOutCounters()
-            var counter: CGFloat = 0
-            switch data {
-            case .all:
-                for loader in CoreDataLoader.shared.allDafifLoaders {
-                    loader.self.init().loadAllFolderItems(moc: moc)
-                    counter = CoreDataLoader.shared.incrementComplete(counter, total: CGFloat(CoreDataLoader.shared.allDafifLoaders.count))
-                }
-            case .some(let requiredData):
-                for rd in requiredData {
-                    rd.self.init().loadAllFolderItems(moc: moc)
-                    counter = CoreDataLoader.shared.incrementComplete(counter, total: CGFloat(requiredData.count))
-                }
-            }})}
+        CoreDataLoader.shared.zeroOutCounters()
+        var counter: CGFloat = 0
+        switch data {
+        case .all:
+            for loader in CoreDataLoader.shared.allDafifLoaders {
+                loader.self.init().loadAllFolderItems()
+                counter = CoreDataLoader.shared.incrementComplete(counter, total: CGFloat(CoreDataLoader.shared.allDafifLoaders.count))
+            }
+        case .some(let requiredData):
+            for rd in requiredData {
+                rd.self.init().loadAllFolderItems()
+                counter = CoreDataLoader.shared.incrementComplete(counter, total: CGFloat(requiredData.count))
+            }
+        }
+//        })
+    }
     
     
-    public static func deleteData(data: DafifDesired) {
-        pc.performBackgroundTask({ (moc) in
+    public func deleteData(data: DafifDesired) {
+//        pc.performBackgroundTask({ (moc) in
             switch data {
             case .all:
                 for loader in CoreDataLoader.shared.allDafifLoaders {
@@ -67,11 +68,11 @@ public class CoreDataLoader: ObservableObject, CoreDataUtilities {
                 }
             }
             
-        })
+//        })
     }
     
     //Debug Printer
-    public static func printCDCounter() {
+    public func printCDCounter() {
         pc.performBackgroundTask({ (moc) in
             CoreDataLoader.shared.get(entityType: VfrRte.self)
             CoreDataLoader.shared.get(entityType: VfrRteSeg.self)

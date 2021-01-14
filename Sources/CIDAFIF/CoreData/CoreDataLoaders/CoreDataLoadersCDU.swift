@@ -29,7 +29,7 @@ public class AtsCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .ats)
             switch i {
@@ -39,13 +39,13 @@ public class AtsCDU: DafifLoaderUtilities, CoreDataUtilities {
                         if property.count >= 8 {
                             let entity = AtsRmk(context: moc)
                             entity.atsIdent = property[0]
-                            entity.seqNbr = property[1].toInt16
+                            entity.seqNbr = property[1]
                             entity.direction = property[2]
                             entity.type = property[3]
                             entity.icao = property[4]
-                            entity.rmkSeq = property[5].toInt16
+                            entity.rmkSeq = property[5]
                             entity.remark = property[6]
-                            entity.cycleDate = property[7]
+//                            entity.cycleDate = property[7]
                         }}
                     moc.performAndWait {
                         do {
@@ -66,7 +66,7 @@ public class AtsCDU: DafifLoaderUtilities, CoreDataUtilities {
                         if property.count >= 8 {
                             let entity = AtsCtry(context: moc)
                             entity.atsIdent = property[0]
-                            entity.seqNbr = property[1].toInt16
+                            entity.seqNbr = property[1]
                             entity.direction = property[2]
                             entity.type = property[3]
                             entity.icao = property[4]
@@ -93,7 +93,7 @@ public class AtsCDU: DafifLoaderUtilities, CoreDataUtilities {
                         if property.count >= 46 {
                             let entity = Ats(context: moc)
                             entity.atsIdent = property[0]
-                            entity.seqNbr = property[1].toInt16
+                            entity.seqNbr = property[1]
                             entity.direction = property[2]
                             entity.type = property[3]
                             entity.icao = property[4]
@@ -114,7 +114,7 @@ public class AtsCDU: DafifLoaderUtilities, CoreDataUtilities {
                             entity.wpt1WgsLong = property[19]
                             entity.wpt1WgsDlong = property[20].toDouble
                             entity.wpt2Icao = property[21]
-                            entity.wpt2NavType = property[22].toInt16
+                            entity.wpt2NavType = property[22]
                             entity.wpt2Ident = property[23]
                             entity.wpt2Ctry = property[24]
                             entity.wpt2Desc1 = property[25]
@@ -134,10 +134,10 @@ public class AtsCDU: DafifLoaderUtilities, CoreDataUtilities {
                             entity.maa = property[39]
                             entity.cruiseLevel = property[40]
                             entity.rnp = property[41]
-                            entity.cycleDate = property[42].toInt16
+                            entity.cycleDate = property[42]
                             entity.rvsm = property[43]
                             entity.fixTurn1 = property[44]
-                            entity.fixTurn2 = property[45]
+//                            entity.fixTurn2 = property[45]
                         }}
                     moc.performAndWait {
                         do {
@@ -184,7 +184,7 @@ public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .hlpt)
             switch i {
@@ -193,9 +193,9 @@ public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 40 {
                         let entity = Pad(context: moc)
                         entity.heliIdent = property[0]
-                        entity.seqNbr = property[1].toInt16
-                        entity.length = property[2].toInt16
-                        entity.width = property[3].toInt16
+                        entity.seqNbr = property[1]
+                        entity.length = property[2]
+                        entity.width = property[3]
                         entity.surface = property[4]
                         entity.acType = property[5]
                         entity.wgsLat = property[6]
@@ -230,7 +230,7 @@ public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.highTrue = property[35]
                         entity.lowTrue = property[36]
                         entity.cldRwy = property[37]
-                        entity.padId = property[38].toInt16
+                        entity.padId = property[38]
                         entity.cycleDate = property[39]
                     }}
                 
@@ -241,9 +241,9 @@ public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = Hnav(context: moc)
                         entity.heliIdent = property[0]
                         entity.navIdent = property[1]
-                        entity.navType = property[2].toInt16
+                        entity.navType = property[2]
                         entity.navCtry = property[3]
-                        entity.navKeyCd = property[4].toInt16
+                        entity.navKeyCd = property[4]
                         entity.name = property[5]
                         entity.atFld = property[6]
                         entity.bearing = property[7]
@@ -278,12 +278,12 @@ public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.wgsDlat = property[8].toDouble
                         entity.wgsLong = property[9]
                         entity.wgsDlong = property[10].toDouble
-                        entity.elev = property[11].toInt16
+                        entity.elev = property[11]
                         entity.type = property[12]
                         entity.magVar = property[13]
-                        entity.wac = property[14].toInt16
+                        entity.wac = property[14]
                         entity.beacon = property[15]
-                        entity.cycleDate = property[16].toInt16
+                        entity.cycleDate = property[16]
                         entity.terrain = property[17]
                         entity.hydro = property[18]
                     }}
@@ -304,10 +304,10 @@ public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.freq5 = property[8]
                         entity.sec = property[9]
                         entity.sOprH = property[10]
-                        entity.cycleDate = property[11].toInt16
-                        entity.multi = property[12].toInt16
-                        entity.freqMulti = property[13].toInt16
-                        entity.comFreq1 = property[14].toInt16
+                        entity.cycleDate = property[11]
+                        entity.multi = property[12]
+                        entity.freqMulti = property[13]
+                        entity.comFreq1 = property[14]
                         entity.freqUnit1 = property[15]
                         entity.comFreq2 = property[16]
                         entity.freqUnit2 = property[17]
@@ -326,10 +326,10 @@ public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = HcomRmk(context: moc)
                         entity.heliIdent = property[0]
                         entity.commType = property[1]
-                        entity.rmkSeq = property[2].toInt16
+                        entity.rmkSeq = property[2]
                         entity.remark = property[3]
-                        entity.cycleDate = property[4].toInt16
-                        entity.multi = property[5].toInt16
+                        entity.cycleDate = property[4]
+                        entity.multi = property[5]
                         entity.freqMulti = property[6]
                     }}
                 
@@ -368,7 +368,7 @@ public class SuppCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .supp)
             switch i {
@@ -392,7 +392,7 @@ public class SuppCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = SvcRmk(context: moc)
                         entity.arptIdent = property[0]
                         entity.type = property[1]
-                        entity.rmkSeq = property[2].toInt16
+                        entity.rmkSeq = property[2]
                         entity.icao = property[3]
                         entity.remarks = property[4]
                         entity.cycleDate = property[5]
@@ -404,14 +404,14 @@ public class SuppCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 25 {
                         let entity = AddRwy(context: moc)
                         entity.arptIdent = property[0]
-                        entity.highIdent = property[1].toInt16
-                        entity.loIdent = property[2].toInt16
+                        entity.highIdent = property[1]
+                        entity.loIdent = property[2]
                         entity.icao = property[3]
                         entity.heDtLat = property[4]
                         entity.heDtDlat = property[5].toDouble
                         entity.heDtLong = property[6]
                         entity.heDtDlong = property[7].toDouble
-                        entity.heOverrunDis = property[8].toInt16
+                        entity.heOverrunDis = property[8]
                         entity.heSurface = property[9]
                         entity.heOverrunLat = property[10]
                         entity.heOverrunDlat = property[11].toDouble
@@ -421,7 +421,7 @@ public class SuppCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.loDtDlat = property[15].toDouble
                         entity.loDtLong = property[16]
                         entity.loDtDlong = property[17].toDouble
-                        entity.loOverrunDis = property[18].toInt16
+                        entity.loOverrunDis = property[18]
                         entity.loSurface = property[19]
                         entity.loOverrunLat = property[20]
                         entity.loOverrunDlat = property[21].toDouble
@@ -491,7 +491,7 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .trm)
             switch i {
@@ -500,13 +500,13 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 9 {
                         let entity = TrmRmk(context: moc)
                         entity.arptIdent = property[0]
-                        entity.proc = property[1].toInt16
+                        entity.proc = property[1]
                         entity.trmIdent = property[2]
                         entity.appType = property[3]
-                        entity.rmkSeq = property[4].toInt16
+                        entity.rmkSeq = property[4]
                         entity.icao = property[5]
                         entity.remarks = property[6]
-                        entity.cycleDate = property[7].toInt16
+                        entity.cycleDate = property[7]
                         entity.rmkType = property[8]
                     }}
                 moc.performAndWait {
@@ -522,15 +522,15 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 12 {
                         let entity = TrmClb(context: moc)
                         entity.arptIdent = property[0]
-                        entity.proc = property[1].toInt16
+                        entity.proc = property[1]
                         entity.trmIdent = property[2]
-                        entity.rwyId = property[3].toInt16
-                        entity.occNo = property[4].toInt16
+                        entity.rwyId = property[3]
+                        entity.occNo = property[4]
                         entity.icao = property[5]
-                        entity.desig = property[6].toInt16
-                        entity.knots = property[7].toInt16
-                        entity.rateDesc = property[8].toInt16
-                        entity.alt = property[9].toInt16
+                        entity.desig = property[6]
+                        entity.knots = property[7]
+                        entity.rateDesc = property[8]
+                        entity.alt = property[9]
                         entity.ftnote = property[10]
                         entity.cycleDate = property[11]
                     }}
@@ -547,10 +547,10 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
                         if property.count >= 65 {
                             let entity = TrmSeg(context: moc)
                             entity.arptIdent = property[0]
-                            entity.proc = property[1].toInt16
+                            entity.proc = property[1]
                             entity.trmIdent = property[2]
-                            entity.seqNbr = property[3].toInt16
-                            entity.type = property[4].toInt16
+                            entity.seqNbr = property[3]
+                            entity.type = property[4]
                             entity.transition = property[5]
                             entity.icao = property[6]
                             entity.trackCd = property[7]
@@ -579,7 +579,7 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
                             entity.altOne = property[30]
                             entity.altTwo = property[31]
                             entity.rnp = property[32]
-                            entity.cycleDate = property[33].toInt16
+                            entity.cycleDate = property[33]
                             entity.wptWgsLat = property[34]
                             entity.wptWgsDlat = property[35].toDouble
                             entity.wptWgsLong = property[36]
@@ -631,29 +631,29 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 32 {
                         let entity = TrmMin(context: moc)
                         entity.arptIdent = property[0]
-                        entity.proc = property[1].toInt16
+                        entity.proc = property[1]
                         entity.trmIdent = property[2]
                         entity.appType = property[3]
                         entity.icao = property[4]
-                        entity.catADh = property[5].toInt16
+                        entity.catADh = property[5]
                         entity.catARv = property[6]
-                        entity.catAHa = property[7].toInt16
-                        entity.catAWxCl = property[8].toInt16
+                        entity.catAHa = property[7]
+                        entity.catAWxCl = property[8]
                         entity.catAWxPv = property[9]
-                        entity.catBDh = property[10].toInt16
+                        entity.catBDh = property[10]
                         entity.catBRv = property[11]
-                        entity.catBHa = property[12].toInt16
-                        entity.catBWxCl = property[13].toInt16
+                        entity.catBHa = property[12]
+                        entity.catBWxCl = property[13]
                         entity.catBWxPv = property[14]
-                        entity.catCDh = property[15].toInt16
+                        entity.catCDh = property[15]
                         entity.catCRv = property[16]
-                        entity.catCHa = property[17].toInt16
-                        entity.catCWxCl = property[18].toInt16
+                        entity.catCHa = property[17]
+                        entity.catCWxCl = property[18]
                         entity.catCWxPv = property[19]
-                        entity.catDDh = property[20].toInt16
+                        entity.catDDh = property[20]
                         entity.catDRv = property[21]
-                        entity.catDHa = property[22].toInt16
-                        entity.catDWxCl = property[23].toInt16
+                        entity.catDHa = property[22]
+                        entity.catDWxCl = property[23]
                         entity.catDWxPv = property[24]
                         entity.catEDh = property[25]
                         entity.catERv = property[26]
@@ -676,21 +676,21 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 21 {
                         let entity = TrmMsa(context: moc)
                         entity.arptIdent = property[0]
-                        entity.proc = property[1].toInt16
+                        entity.proc = property[1]
                         entity.trmIdent = property[2]
-                        entity.secNbr = property[3].toInt16
-                        entity.secAlt = property[4].toInt16
+                        entity.secNbr = property[3]
+                        entity.secAlt = property[4]
                         entity.icao = property[5]
                         entity.navIdent = property[6]
                         entity.navType = property[7]
                         entity.navCtry = property[8]
                         entity.navKeyCd = property[9]
-                        entity.secBear1 = property[10].toInt16
+                        entity.secBear1 = property[10]
                         entity.secBear2 = property[11]
                         entity.wptIdent = property[12]
                         entity.wptCtry = property[13]
-                        entity.secMile1 = property[14].toInt16
-                        entity.secMile2 = property[15].toInt16
+                        entity.secMile1 = property[14]
+                        entity.secMile2 = property[15]
                         entity.wgsLat = property[16]
                         entity.wgsDlat = property[17].toDouble
                         entity.wgsLong = property[18]
@@ -710,18 +710,18 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 14 {
                         let entity = TrmPar(context: moc)
                         entity.arptIdent = property[0]
-                        entity.proc = property[1].toInt16
+                        entity.proc = property[1]
                         entity.trmIdent = property[2]
                         entity.icao = property[3]
                         entity.esAlt = property[4]
-                        entity.julianDate = property[5].toInt16
-                        entity.amdtNo = property[6].toInt16
+                        entity.julianDate = property[5]
+                        entity.amdtNo = property[6]
                         entity.opr = property[7]
                         entity.hostCtryAuth = property[8]
-                        entity.cycleDate = property[9].toInt16
+                        entity.cycleDate = property[9]
                         entity.altMin = property[10]
-                        entity.tranAlt = property[11].toInt16
-                        entity.tranLvl = property[12].toInt16
+                        entity.tranAlt = property[11]
+                        entity.tranLvl = property[12]
                         entity.rteTypeQual = property[13]
                     }}
                 moc.performAndWait {
@@ -906,7 +906,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
             }}}
     
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .appc)
             switch i {
@@ -941,7 +941,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcNavType(context: moc)
-                        entity.type = property[0].toInt16
+                        entity.type = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1006,7 +1006,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcIlsCat(context: moc)
-                        entity.cat = property[0].toInt16
+                        entity.cat = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1033,7 +1033,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcTrmType(context: moc)
-                        entity.type = property[0].toInt16
+                        entity.type = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1042,7 +1042,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 6 {
                         let entity = AppcFuelCodes(context: moc)
-                        entity.fuelCode = property[0].toInt16
+                        entity.fuelCode = property[0]
                         entity.flip = property[1]
                         entity.nato = property[2]
                         entity.aka = property[3]
@@ -1074,7 +1074,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcPrPtType(context: moc)
-                        entity.ptTy = property[0].toInt16
+                        entity.ptTy = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1083,7 +1083,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcTrmNavType(context: moc)
-                        entity.nav1Type = property[0].toInt16
+                        entity.nav1Type = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1130,7 +1130,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcBdryType(context: moc)
-                        entity.type = property[0].toInt16
+                        entity.type = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1248,7 +1248,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 3 {
                         let entity = AppcRwyLgtCodes(context: moc)
-                        entity.lgtCode = property[0].toInt16
+                        entity.lgtCode = property[0]
                         entity.sys = property[1]
                         entity.definition = property[2]
                     }}
@@ -1267,7 +1267,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcPjaType(context: moc)
-                        entity.type = property[0].toInt16
+                        entity.type = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1304,7 +1304,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcTrmProc(context: moc)
-                        entity.proc = property[0].toInt16
+                        entity.proc = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1367,7 +1367,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 3 {
                         let entity = AppcJasu(context: moc)
-                        entity.jasuCode = property[0].toInt16
+                        entity.jasuCode = property[0]
                         entity.type = property[1]
                         entity.description_ = property[2]
                     }}
@@ -1394,7 +1394,7 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 2 {
                         let entity = AppcPjaOprTime(context: moc)
-                        entity.oprTime = property[0].toInt16
+                        entity.oprTime = property[0]
                         entity.description_ = property[1]
                     }}
                 
@@ -1496,7 +1496,7 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .arpt)
             switch i {
@@ -1546,8 +1546,8 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.lowIdent = property[2]
                         entity.highHdg = property[3].toDouble
                         entity.lowHdg = property[4].toDouble
-                        entity.length = property[5].toInt16
-                        entity.rwyWidth = property[6].toInt16
+                        entity.length = property[5].toDouble
+                        entity.rwyWidth = property[6]
                         entity.surface = property[7]
                         entity.pcn = property[8]
                         entity.heWgsLat = property[9]
@@ -1557,11 +1557,11 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.heElev = property[13].toDouble
                         entity.heSlope = property[14].toDouble
                         entity.heTdze = property[15]
-                        entity.heDt = property[16].toInt16
+                        entity.heDt = property[16]
                         entity.heDtElev = property[17].toDouble
-                        entity.hlgtSys1 = property[18].toInt16
-                        entity.hlgtSys2 = property[19].toInt16
-                        entity.hlgtSys3 = property[20].toInt16
+                        entity.hlgtSys1 = property[18]
+                        entity.hlgtSys2 = property[19]
+                        entity.hlgtSys3 = property[20]
                         entity.hlgtSys4 = property[21]
                         entity.hlgtSys5 = property[22]
                         entity.hlgtSys6 = property[23]
@@ -1574,11 +1574,11 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.leElev = property[30].toDouble
                         entity.leSlope = property[31].toDouble
                         entity.leTdze = property[32]
-                        entity.leDt = property[33].toInt16
+                        entity.leDt = property[33]
                         entity.leDtElev = property[34].toDouble
-                        entity.llgtSys1 = property[35].toInt16
-                        entity.llgtSys2 = property[36].toInt16
-                        entity.llgtSys3 = property[37].toInt16
+                        entity.llgtSys1 = property[35]
+                        entity.llgtSys2 = property[36]
+                        entity.llgtSys3 = property[37]
                         entity.llgtSys4 = property[38]
                         entity.llgtSys5 = property[39]
                         entity.llgtSys6 = property[40]
@@ -1587,10 +1587,10 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.heTrueHdg = property[43].toDouble
                         entity.leTrueHdg = property[44].toDouble
                         entity.cldRwy = property[45]
-                        entity.helandDis = property[46].toInt16
-                        entity.heTakeoff = property[47].toInt16
-                        entity.lelandDis = property[48].toInt16
-                        entity.leTakeoff = property[49].toInt16
+                        entity.helandDis = property[46]
+                        entity.heTakeoff = property[47]
+                        entity.lelandDis = property[48]
+                        entity.leTakeoff = property[49]
                         entity.cycleDate = property[50]
                     }}
                 
@@ -1621,10 +1621,10 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.freq5 = property[8]
                         entity.sec = property[9]
                         entity.sOprH = property[10]
-                        entity.cycleDate = property[11].toInt16
-                        entity.multi = property[12].toInt16
-                        entity.freqMulti = property[13].toInt16
-                        entity.comFreq1 = property[14].toInt16
+                        entity.cycleDate = property[11]
+                        entity.multi = property[12]
+                        entity.freqMulti = property[13]
+                        entity.comFreq1 = property[14]
                         entity.freqUnit1 = property[15]
                         entity.comFreq2 = property[16]
                         entity.freqUnit2 = property[17]
@@ -1652,10 +1652,10 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.wgsDlat = property[8].toDouble
                         entity.wgsLong = property[9]
                         entity.wgsDlong = property[10].toDouble
-                        entity.elev = property[11].toInt16
+                        entity.elev = property[11]
                         entity.type = property[12]
                         entity.magVar = property[13]
-                        entity.wac = property[14].toInt16
+                        entity.wac = property[14]
                         entity.beacon = property[15]
                         entity.secondArpt = property[16]
                         entity.oprAgy = property[17]
@@ -1663,7 +1663,7 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.secIcao = property[19]
                         entity.secFaa = property[20]
                         entity.secOprAgy = property[21]
-                        entity.cycleDate = property[22].toInt16
+                        entity.cycleDate = property[22]
                         entity.terrain = property[23]
                         entity.hydro = property[24]
                     }}
@@ -1675,9 +1675,9 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = AcomRmk(context: moc)
                         entity.arptIdent = property[0]
                         entity.commType = property[1]
-                        entity.rmkSeq = property[2].toInt16
+                        entity.rmkSeq = property[2]
                         entity.remark = property[3]
-                        entity.cycleDate = property[4].toInt16
+                        entity.cycleDate = property[4]
                         entity.multi = property[5]
                     }}
                 
@@ -1688,9 +1688,9 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = Anav(context: moc)
                         entity.arptIdent = property[0]
                         entity.navIdent = property[1]
-                        entity.navType = property[2].toInt16
+                        entity.navType = property[2]
                         entity.navCtry = property[3]
-                        entity.navKeyCd = property[4].toInt16
+                        entity.navKeyCd = property[4]
                         entity.name = property[5]
                         entity.atFld = property[6]
                         entity.bearing = property[7].toDouble
@@ -1704,7 +1704,7 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 5 {
                         let entity = Agear(context: moc)
                         entity.arptIdent = property[0]
-                        entity.rwyIdent = property[1].toInt16
+                        entity.rwyIdent = property[1]
                         entity.location = property[2]
                         entity.type = property[3]
                         entity.cycleDate = property[4]
@@ -1741,7 +1741,7 @@ public class OrtcaCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .ortca)
             switch i {
@@ -1749,8 +1749,8 @@ public class OrtcaCDU: DafifLoaderUtilities, CoreDataUtilities {
                 for property in lineItem {
                     if property.count >= 20 {
                         let entity = Ortca(context: moc)
-                        entity.ortcaIdent = property[0].toInt16
-                        entity.alt = property[1].toInt16
+                        entity.ortcaIdent = property[0]
+                        entity.alt = property[1]
                         entity.nwLat = property[2]
                         entity.nwDlat = property[3].toDouble
                         entity.nwLong = property[4]
@@ -1767,7 +1767,7 @@ public class OrtcaCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.seDlat = property[15].toDouble
                         entity.seLong = property[16]
                         entity.seDlong = property[17].toDouble
-                        entity.cycleDate = property[18].toInt16
+                        entity.cycleDate = property[18]
                         entity.ortcaId = property[19]
                     }}
                 
@@ -1801,7 +1801,7 @@ public class WptCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .wpt)
             switch i {
@@ -1811,7 +1811,7 @@ public class WptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = Wpt(context: moc)
                         entity.wptIdent = property[0]
                         entity.ctry = property[1]
-                        entity.stateProv = property[2].toInt16
+                        entity.stateProv = property[2]
                         entity.wptNavFlag = property[3]
                         entity.type = property[4]
                         entity.desc = property[5]
@@ -1819,7 +1819,7 @@ public class WptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.usageCd = property[7]
                         entity.bearing = property[8].toDouble
                         entity.distance = property[9].toDouble
-                        entity.wac = property[10].toInt16
+                        entity.wac = property[10]
                         entity.locHdatum = property[11]
                         entity.wgsDatum = property[12]
                         entity.wgsLat = property[13]
@@ -1828,10 +1828,10 @@ public class WptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.wgsDlong = property[16].toDouble
                         entity.magVar = property[17]
                         entity.navIdent = property[18]
-                        entity.navType = property[19].toInt16
+                        entity.navType = property[19]
                         entity.navCtry = property[20]
-                        entity.navKeyCd = property[21].toInt16
-                        entity.cycleDate = property[22].toInt16
+                        entity.navKeyCd = property[21]
+                        entity.cycleDate = property[22]
                         entity.wptRvsm = property[23]
                         entity.rwyId = property[24]
                         entity.rwyIcao = property[25]
@@ -1868,7 +1868,7 @@ public class PjaCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .pja)
             switch i {
@@ -1877,7 +1877,7 @@ public class PjaCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 30 {
                         let entity = Pja(context: moc)
                         entity.pjaIdent = property[0]
-                        entity.segNbr = property[1].toInt16
+                        entity.segNbr = property[1]
                         entity.name = property[2]
                         entity.icaoRegion = property[3]
                         entity.shap = property[4]
@@ -1894,7 +1894,7 @@ public class PjaCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.wgsDlat0 = property[15].toDouble
                         entity.wgsLong0 = property[16]
                         entity.wgsDlong0 = property[17].toDouble
-                        entity.type = property[18].toInt16
+                        entity.type = property[18]
                         entity.radius1 = property[19]
                         entity.radius2 = property[20]
                         entity.bearing1 = property[21].toDouble
@@ -1902,9 +1902,9 @@ public class PjaCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.distance1 = property[23].toDouble
                         entity.distance2 = property[24].toDouble
                         entity.navIdent = property[25]
-                        entity.navType = property[26].toInt16
+                        entity.navType = property[26]
                         entity.navCtry = property[27]
-                        entity.navKeyCd = property[28].toInt16
+                        entity.navKeyCd = property[28]
                         entity.cycleDate = property[29]
                     }}
                 
@@ -1917,10 +1917,10 @@ public class PjaCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.name = property[1]
                         entity.icaoRegion = property[2]
                         entity.stateProv = property[3]
-                        entity.oprTime = property[4].toInt16
+                        entity.oprTime = property[4]
                         entity.hours = property[5]
                         entity.alt = property[6]
-                        entity.cycleDate = property[7].toInt16
+                        entity.cycleDate = property[7]
                         entity.effTimes = property[8]
                     }}
                 
@@ -1957,7 +1957,7 @@ public class IrCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .ir)
             switch i {
@@ -1966,7 +1966,7 @@ public class IrCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 18 {
                         let entity = IrPar(context: moc)
                         entity.bdryIdent = property[0]
-                        entity.type = property[1].toInt16
+                        entity.type = property[1]
                         entity.name = property[2]
                         entity.icao = property[3]
                         entity.conAuth = property[4]
@@ -1981,7 +1981,7 @@ public class IrCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.level = property[13]
                         entity.upperAlt = property[14]
                         entity.lowerAlt = property[15]
-                        entity.rnp = property[16].toInt16
+                        entity.rnp = property[16]
                         entity.cycleDate = property[17]
                     }}
                 
@@ -1991,9 +1991,9 @@ public class IrCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 28 {
                         let entity = Ir(context: moc)
                         entity.bdryIdent = property[0]
-                        entity.segNbr = property[1].toInt16
+                        entity.segNbr = property[1]
                         entity.name = property[2]
-                        entity.type = property[3].toInt16
+                        entity.type = property[3]
                         entity.icao = property[4]
                         entity.shap = property[5]
                         entity.derivation = property[6]
@@ -2026,7 +2026,7 @@ public class IrCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 8 {
                         let entity = IrCtry(context: moc)
                         entity.bdryIdent = property[0]
-                        entity.segNbr = property[1].toInt16
+                        entity.segNbr = property[1]
                         entity.ctry1 = property[2]
                         entity.ctry2 = property[3]
                         entity.ctry3 = property[4]
@@ -2072,7 +2072,7 @@ public class MtrCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .mtr)
             switch i {
@@ -2081,10 +2081,10 @@ public class MtrCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 8 {
                         let entity = MtrOsm(context: moc)
                         entity.mtrIdent = property[0]
-                        entity.segNbr = property[1].toInt16
-                        entity.seqNbr = property[2].toInt16
+                        entity.segNbr = property[1]
+                        entity.seqNbr = property[2]
                         entity.suasMoaId = property[3]
-                        entity.cycleDate = property[4].toInt16
+                        entity.cycleDate = property[4]
                         entity.sector = property[5]
                         entity.ptIdent = property[6]
                         entity.nxPoint = property[7]
@@ -2107,9 +2107,9 @@ public class MtrCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.enrAlt2 = property[9]
                         entity.ptNavFlag = property[10]
                         entity.navIdent = property[11]
-                        entity.navType = property[12].toInt16
+                        entity.navType = property[12]
                         entity.navCtry = property[13]
-                        entity.navKeyCd = property[14].toInt16
+                        entity.navKeyCd = property[14]
                         entity.bearing = property[15].toDouble
                         entity.distance = property[16].toDouble
                         entity.mtrWidthL = property[17].toDouble
@@ -2131,7 +2131,7 @@ public class MtrCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 25 {
                         let entity = MtrOv(context: moc)
                         entity.mtrIdent = property[0]
-                        entity.segNbr = property[1].toInt16
+                        entity.segNbr = property[1]
                         entity.ptIdent = property[2]
                         entity.ptUsage = property[3]
                         entity.ptLat = property[4]
@@ -2163,7 +2163,7 @@ public class MtrCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 4 {
                         let entity = MtrRmk(context: moc)
                         entity.mtrIdent = property[0]
-                        entity.rmkSeq = property[1].toInt16
+                        entity.rmkSeq = property[1]
                         entity.remarks = property[2]
                         entity.cycleDate = property[3]
                     }}
@@ -2213,7 +2213,7 @@ public class PappCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .papp)
             switch i {
@@ -2281,7 +2281,7 @@ public class NavCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .nav)
             switch i {
@@ -2290,13 +2290,13 @@ public class NavCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 32 {
                         let entity = Nav(context: moc)
                         entity.navIdent = property[0]
-                        entity.type = property[1].toInt16
+                        entity.type = property[1]
                         entity.ctry = property[2]
-                        entity.navKeyCd = property[3].toInt16
+                        entity.navKeyCd = property[3]
                         entity.stateProv = property[4]
                         entity.name = property[5]
                         entity.icao = property[6]
-                        entity.wac = property[7].toInt16
+                        entity.wac = property[7]
                         entity.freq = property[8]
                         entity.usageCd = property[9]
                         entity.chan = property[10]
@@ -2353,7 +2353,7 @@ public class PrCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .pr)
             switch i {
@@ -2431,7 +2431,7 @@ public class TzCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .tz)
             switch i {
@@ -2440,7 +2440,7 @@ public class TzCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 18 {
                         let entity = TzPar(context: moc)
                         entity.bdryIdent = property[0]
-                        entity.type = property[1].toInt16
+                        entity.type = property[1]
                         entity.name = property[2]
                         entity.icao = property[3]
                         entity.conAuth = property[4]
@@ -2456,7 +2456,7 @@ public class TzCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.upperAlt = property[14]
                         entity.lowerAlt = property[15]
                         entity.rnp = property[16]
-                        entity.cycleDate = property[17].toInt16
+                        entity.cycleDate = property[17]
                     }}
                 
                 print("\(fileNames[i]) DONE")
@@ -2465,9 +2465,9 @@ public class TzCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 28 {
                         let entity = Tz(context: moc)
                         entity.bdryIdent = property[0]
-                        entity.segNbr = property[1].toInt16
+                        entity.segNbr = property[1]
                         entity.name = property[2]
-                        entity.type = property[3].toInt16
+                        entity.type = property[3]
                         entity.icao = property[4]
                         entity.shap = property[5]
                         entity.derivation = property[6]
@@ -2523,7 +2523,7 @@ public class HoldCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .hold)
             switch i {
@@ -2534,14 +2534,14 @@ public class HoldCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.wptId = property[0]
                         entity.wptCtry = property[1]
                         entity.icao = property[2]
-                        entity.dup = property[3].toInt16
-                        entity.inbCrs = property[4].toInt16
+                        entity.dup = property[3]
+                        entity.inbCrs = property[4]
                         entity.turnDir = property[5]
                         entity.length = property[6]
                         entity.time = property[7].toDouble
-                        entity.altOne = property[8].toInt16
+                        entity.altOne = property[8]
                         entity.altTwo = property[9]
-                        entity.speed = property[10].toInt16
+                        entity.speed = property[10]
                         entity.trackCd = property[11]
                         entity.navIdent = property[12]
                         entity.navType = property[13]
@@ -2585,7 +2585,7 @@ public class SuasCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .suas)
             switch i {
@@ -2609,7 +2609,7 @@ public class SuasCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.lowerAlt = property[13]
                         entity.effTimes = property[14]
                         entity.wx = property[15]
-                        entity.cycleDate = property[16].toInt16
+                        entity.cycleDate = property[16]
                         entity.effDate = property[17]
                     }}
                 
@@ -2620,7 +2620,7 @@ public class SuasCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = Suas(context: moc)
                         entity.suasIdent = property[0]
                         entity.sector = property[1]
-                        entity.segNbr = property[2].toInt16
+                        entity.segNbr = property[2]
                         entity.name = property[3]
                         entity.type = property[4]
                         entity.icao = property[5]
@@ -2657,7 +2657,7 @@ public class SuasCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.suasIdent = property[0]
                         entity.sector = property[1]
                         entity.noteType = property[2]
-                        entity.noteNbr = property[3].toInt16
+                        entity.noteNbr = property[3]
                         entity.remarks = property[4]
                         entity.cycleDate = property[5]
                     }}
@@ -2718,7 +2718,7 @@ public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .arf)
             switch i {
@@ -2730,8 +2730,8 @@ public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.direction = property[1]
                         entity.icao = property[2]
                         entity.ftType = property[3]
-                        entity.ftNo = property[4].toInt16
-                        entity.rmkSeq = property[5].toInt16
+                        entity.ftNo = property[4]
+                        entity.rmkSeq = property[5]
                         entity.remarks = property[6]
                         entity.cycleDate = property[7]
                     }}
@@ -2743,7 +2743,7 @@ public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = ArfSeg(context: moc)
                         entity.arfIdent = property[0]
                         entity.direction = property[1]
-                        entity.segNbr = property[2].toInt16
+                        entity.segNbr = property[2]
                         entity.icao = property[3]
                         entity.shap = property[4]
                         entity.derivation = property[5]
@@ -2780,7 +2780,7 @@ public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.icao = property[2]
                         entity.usage = property[3]
                         entity.center = property[4]
-                        entity.cntrMult = property[5].toInt16
+                        entity.cntrMult = property[5]
                         entity.freq1 = property[6]
                         entity.eW1 = property[7]
                         entity.freq2 = property[8]
@@ -2802,7 +2802,7 @@ public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = ArfRmk(context: moc)
                         entity.arfIdent = property[0]
                         entity.direction = property[1]
-                        entity.rmkSeq = property[2].toInt16
+                        entity.rmkSeq = property[2]
                         entity.icao = property[3]
                         entity.remarks = property[4]
                         entity.cycleDate = property[5]
@@ -2859,7 +2859,7 @@ public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
                         let entity = ArfPt(context: moc)
                         entity.arfIdent = property[0]
                         entity.direction = property[1]
-                        entity.ptSeqNbr = property[2].toInt16
+                        entity.ptSeqNbr = property[2]
                         entity.icao = property[3]
                         entity.usage = property[4]
                         entity.ptNavFlag = property[5]
@@ -2873,7 +2873,7 @@ public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.wgsDlat = property[13].toDouble
                         entity.wgsLong = property[14]
                         entity.wgsDlong = property[15].toDouble
-                        entity.cycleDate = property[16].toInt16
+                        entity.cycleDate = property[16]
                         entity.ptIdent = property[17]
                     }}
                 
@@ -2910,7 +2910,7 @@ public class VfrCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .vfr)
             switch i {
@@ -2929,7 +2929,7 @@ public class VfrCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.rpWgsDlat = property[8].toDouble
                         entity.wgsLong = property[9]
                         entity.rpWgsDlong = property[10].toDouble
-                        entity.elev = property[11].toInt16
+                        entity.elev = property[11]
                         entity.magVar = property[12]
                         entity.cityCrossRef = property[13]
                         entity.locHdatum = property[14]
@@ -2942,8 +2942,8 @@ public class VfrCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 29 {
                         let entity = VfrRteSeg(context: moc)
                         entity.heliIdent = property[0]
-                        entity.rteIdent = property[1].toInt16
-                        entity.segNbr = property[2].toInt16
+                        entity.rteIdent = property[1]
+                        entity.segNbr = property[2]
                         entity.rteName = property[3]
                         entity.ptName = property[4]
                         entity.ptIdentity = property[5]
@@ -2967,7 +2967,7 @@ public class VfrCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.magCrs = property[23]
                         entity.pathCode = property[24]
                         entity.altDesc = property[25]
-                        entity.alt = property[26].toInt16
+                        entity.alt = property[26]
                         entity.turnDir = property[27]
                         entity.cycleDate = property[28]
                     }}
@@ -2978,7 +2978,7 @@ public class VfrCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 4 {
                         let entity = VfrRteRmk(context: moc)
                         entity.heliIdent = property[0]
-                        entity.rmkSeq = property[1].toInt16
+                        entity.rmkSeq = property[1]
                         entity.remarks = property[2]
                         entity.cycleDate = property[3]
                     }}
@@ -3016,7 +3016,7 @@ public class BdryCDU: DafifLoaderUtilities, CoreDataUtilities {
                 print("Nothing to delete")
             }}}
     
-    public func loadAllFolderItems(moc: NSManagedObjectContext) {
+    public func loadAllFolderItems() {
         for i in 0..<fileNames.count {
             let lineItem: [[String]] = getData(from: fileNames[i], inDir: .bdry)
             switch i {
@@ -3026,9 +3026,9 @@ public class BdryCDU: DafifLoaderUtilities, CoreDataUtilities {
                         if property.count >= 28 {
                             let entity = Bdry(context: moc)
                             entity.bdryIdent = property[0]
-                            entity.segNbr = property[1].toInt16
+                            entity.segNbr = property[1]
                             entity.name = property[2]
-                            entity.type = property[3].toInt16
+                            entity.type = property[3]
                             entity.icao = property[4]
                             entity.shap = property[5]
                             entity.derivation = property[6]
@@ -3072,7 +3072,7 @@ public class BdryCDU: DafifLoaderUtilities, CoreDataUtilities {
                         if property.count >= 8 {
                             let entity = BdryCtry(context: moc)
                             entity.bdryIdent = property[0]
-                            entity.segNbr = property[1].toInt16
+                            entity.segNbr = property[1]
                             entity.ctry1 = property[2]
                             entity.ctry2 = property[3]
                             entity.ctry3 = property[4]
@@ -3096,7 +3096,7 @@ public class BdryCDU: DafifLoaderUtilities, CoreDataUtilities {
                     if property.count >= 20 {
                         let entity = BdryPar(context: moc)
                         entity.bdryIdent = property[0]
-                        entity.type = property[1].toInt16
+                        entity.type = property[1]
                         entity.name = property[2]
                         entity.icao = property[3]
                         entity.conAuth = property[4]
@@ -3111,8 +3111,8 @@ public class BdryCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.level = property[13]
                         entity.upperAlt = property[14]
                         entity.lowerAlt = property[15]
-                        entity.rnp = property[16].toInt16
-                        entity.cycleDate = property[17].toInt16
+                        entity.rnp = property[16]
+                        entity.cycleDate = property[17]
                         entity.upRvsm = property[18]
                         entity.loRvsm = property[19]
                     }}

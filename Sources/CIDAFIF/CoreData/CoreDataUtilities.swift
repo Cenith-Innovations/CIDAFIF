@@ -17,7 +17,6 @@ public extension CoreDataUtilities {
     func get<T: NSManagedObject>(entityType: T.Type) -> [T] {
         guard let named = T.description().components(separatedBy: ".").last else { return [] }
         var result: [T] = []
-//        let moc = CoreDataStack.shared.moc
         let fr = NSFetchRequest<T>(entityName: named)
         do {
             result = try moc.fetch(fr)
@@ -32,18 +31,12 @@ public extension CoreDataUtilities {
     
     func delete<T: NSManagedObject>(entityType: T.Type) {
         let named = T.description().components(separatedBy: ".").last ?? ""
-//        let moc = CoreDataStack.shared.moc
         let batchDelete = NSBatchDeleteRequest(fetchRequest: T.fetchRequest())
         do {
             try moc.execute(batchDelete)
-            try moc.save()
             print("All \(named) were succesfully deleted from CoreData")
         } catch {
             print("Nope")
-            
-            
         }}
     
-    
-       
 }

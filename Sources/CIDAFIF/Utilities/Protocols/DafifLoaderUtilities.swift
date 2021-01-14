@@ -17,7 +17,7 @@ public protocol DafifLoaderUtilities: BundleHelper {
     
     func deleteAllFromCoreData(moc: NSManagedObjectContext)
     
-    func loadAllFolderItems(moc: NSManagedObjectContext)
+    func loadAllFolderItems()
     
     func getData(from: String, inDir: Directory) -> [[String]]
 }

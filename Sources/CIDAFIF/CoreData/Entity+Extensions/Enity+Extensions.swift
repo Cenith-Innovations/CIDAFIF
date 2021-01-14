@@ -71,7 +71,7 @@ public extension Rwy {
             return nil
         }}
     
-    class func getWithAirPortIdAndMinRunwayLength(id: String, rwyL: Int16) -> [Rwy] {
+    class func getWithAirPortIdAndMinRunwayLength(id: String, rwyL: Double) -> [Rwy] {
         var newResult: [Rwy] = []
         
         let CDFetchRequest = NSFetchRequest<Rwy>(entityName: "Rwy")

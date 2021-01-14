@@ -9,6 +9,6 @@ let package = Package(
                 .macOS(.v10_15)],
     products: [.library(name: "CIDAFIF", targets: ["CIDAFIF"])],
     dependencies: [.package(url: "https://github.com/Cenith-Innovations/Zip", .upToNextMajor(from: "1.0.0"))],
-    targets: [.target(name: "CIDAFIF", dependencies: ["Zip"], resources: [.process("DAFIF_CoreData.xcdatamodeld")]),
+    targets: [.target(name: "CIDAFIF", dependencies: ["Zip"]),
               .testTarget(name: "CIDAFIFTests",dependencies: ["CIDAFIF"])]
 )

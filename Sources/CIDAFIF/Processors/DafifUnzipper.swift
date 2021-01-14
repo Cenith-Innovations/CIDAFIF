@@ -49,7 +49,7 @@ public class DafifUnzipper: ObservableObject, BundleHelper, CoreDataUtilities {
         
         //Cleaning Up
         deleteAllFilesExcept("DAFIFT")
-        CoreDataLoader.loadSomeData(data: data)
+        CoreDataLoader.shared.loadSomeData(data: data)
     }
 
 }
