@@ -260,18 +260,14 @@ public class DafifAPI: NSObject, ObservableObject {
         }
         return returnList
     }
-    // FIXME:‼️ This isnt working
+    
     public static func getClosestAirportsFilteredByMinRwyLengthAndRangeAndMaxNumberReturned(from: CLLocation, range: Double, minRwyLength: Double, maxNumberReturned: Int = 200) -> [Arpt] {
         var returnList: [Arpt] = []
         guard let airports = Arpt.getAllAirports() else { return [] }
         let reducedList = airports.filter({ $0.icao?.count == 4})
         let rangeReduced = reducedList.filter { arpt in
-            let distance = from.distance(from: CLLocation(latitude: arpt.wgsDlat, longitude: arpt.wgsDlong))
+            let distance = from.distance(from: CLLocation(latitude: arpt.wgsDlat, longitude: arpt.wgsDlong)).metersToNauticalMiles
             return distance <= range
-        }
-        print("************* LIST ******************")
-        for arpt in rangeReduced {
-            print(arpt.icao)
         }
         let runwayIdents = getAllRunwaysGreaterThanOrEqualTo(minRwyLength).map({ $0.arptIdent })
         let mappedList = rangeReduced.sorted { (arpt1, arpt2) -> Bool in
@@ -279,11 +275,11 @@ public class DafifAPI: NSObject, ObservableObject {
             let airportDis1 = from.distance(from: airportLoc1)
             let airportLoc2 = CLLocation(latitude: arpt2.wgsDlat, longitude: arpt2.wgsDlong)
             let airportDis2 = from.distance(from: airportLoc2)
-            
             return airportDis1 < airportDis2
         }
         if mappedList.count > 0 {
-            for i in 0..<mappedList.count {
+            let numberReturned = min(mappedList.count, maxNumberReturned)
+            for i in 0..<numberReturned {
                 if runwayIdents.contains(mappedList[i].arptIdent) {
                     returnList.append(mappedList[i])
                 }
@@ -295,3 +291,7 @@ public class DafifAPI: NSObject, ObservableObject {
     
 }
 
+
+extension Double {
+    var metersToNauticalMiles: Double { self * 0.000539957}
+}
