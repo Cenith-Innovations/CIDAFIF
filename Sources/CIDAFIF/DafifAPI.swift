@@ -11,15 +11,15 @@ import Combine
 import CoreLocation
 import CoreData
 
+
+public typealias AirportInfo = (airport: [Arpt]?, runways: [Rwy]?, addRunways: [AddRwy]?, trmSeg: [TrmSeg]?, trmRmk: [TrmRmk]?, trmPar: [TrmPar]?, trmClb: [TrmClb]?, trmMsa: [TrmMsa]?, trmMin: [TrmMin]?, svcRmk: [SvcRmk]?, anav: [Anav]?, acom: [Acom]?, acomRmk: [AcomRmk]?, gen: [Gen]?, fuelOil: [Fueloil]?, ils: [Ils]?, aGear: [Agear]?, arptRmk: [ArptRmk]?, papp: [Papp]?, nav: [Nav]?)
+
 /// Main API struct to download and handle DAFIF. Declare DafifAPI.shared as an @EnvironmentObject in the SceneDelegate.Swift. This will instantiate a single source of truth for this class that you'll have access throughout the application.
 ///```
 ///.environmentObject(DafifAPI.shared)
 ///```
 //public class DafifAPI: NSObject, ObservableObject, BundleHelper, CoreDataUtilities {
 public class DafifAPI: NSObject, ObservableObject {
-    
-    public typealias AirportInfo = (airport: [Arpt]?, runways: [Rwy]?, addRunways: [AddRwy]?, trmSeg: [TrmSeg]?, trmRmk: [TrmRmk]?, trmPar: [TrmPar]?, trmClb: [TrmClb]?, trmMsa: [TrmMsa]?, trmMin: [TrmMin]?, svcRmk: [SvcRmk]?, anav: [Anav]?, acom: [Acom]?, acomRmk: [AcomRmk]?, gen: [Gen]?, fuelOil: [Fueloil]?, ils: [Ils]?, aGear: [Agear]?, arptRmk: [ArptRmk]?, papp: [Papp]?, nav: [Nav]?)
-    
     
     /// This is the main squeeze! when you want to use any of the progress indicator or error indicator functionality, this is the instance that is used. Declare this as an environment object in your SceneDelegate.swift file to have access on all the child views throughout your appllication.
     @ObservedObject public static var shared = DafifAPI()
