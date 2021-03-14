@@ -19,6 +19,7 @@ public typealias AirportInfo = (airport: [Arpt]?, runways: [Rwy]?, addRunways: [
 ///.environmentObject(DafifAPI.shared)
 ///```
 //public class DafifAPI: NSObject, ObservableObject, BundleHelper, CoreDataUtilities {
+@available(tvOS 13.0, *)
 public class DafifAPI: NSObject, ObservableObject {
     
     /// This is the main squeeze! when you want to use any of the progress indicator or error indicator functionality, this is the instance that is used. Declare this as an environment object in your SceneDelegate.swift file to have access on all the child views throughout your appllication.

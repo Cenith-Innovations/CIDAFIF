@@ -10,6 +10,7 @@ import CoreData
 
 public protocol CoreDataUtilities: BundleHelper {}
 
+@available(tvOS 13.0, *)
 public extension CoreDataUtilities {
     
     // MARK: - Generic Functions

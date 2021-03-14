@@ -8,11 +8,12 @@
 
 import CoreData
 
+@available(tvOS 13.0, *)
 open class PersistentContainer: NSPersistentContainer {}
 public let pc = CoreDataStack.shared.pc
 public let moc = CoreDataStack.shared.moc
 
-
+@available(tvOS 13.0, *)
 public class CoreDataStack {
     
     public static var shared = CoreDataStack()

@@ -9,6 +9,7 @@
 import SwiftUI
 import Combine
 
+@available(tvOS 13.0, *)
 public class DafifDownloader: NSObject, ObservableObject, URLSessionDelegate, URLSessionDownloadDelegate, URLSessionTaskDelegate, BundleHelper {
     
     public static var shared = DafifDownloader()

@@ -9,7 +9,7 @@
 import CoreData
 import SwiftUI
 
-
+@available(tvOS 13.0, *)
 public class AtsCDU: DafifLoaderUtilities, CoreDataUtilities {
     public required init(){}
     
@@ -158,6 +158,8 @@ public class AtsCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -346,6 +348,8 @@ public class HlptCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class SuppCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -463,6 +467,8 @@ public class SuppCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -773,6 +779,8 @@ public class TrmCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -1466,6 +1474,8 @@ public class AppcCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -1725,6 +1735,8 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class OrtcaCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -1785,6 +1797,7 @@ public class OrtcaCDU: DafifLoaderUtilities, CoreDataUtilities {
     }
 }
 
+@available(tvOS 13.0, *)
 public class WptCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -1850,6 +1863,8 @@ public class WptCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class PjaCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -1937,6 +1952,8 @@ public class PjaCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class IrCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2048,6 +2065,8 @@ public class IrCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class MtrCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2197,6 +2216,8 @@ public class MtrCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class PappCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2266,6 +2287,8 @@ public class PappCDU: DafifLoaderUtilities, CoreDataUtilities {
     }
 }
 
+
+@available(tvOS 13.0, *)
 public class NavCDU: DafifLoaderUtilities, CoreDataUtilities {
     public required init(){}
     
@@ -2335,6 +2358,8 @@ public class NavCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class PrCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2413,6 +2438,8 @@ public class PrCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+
+@available(tvOS 13.0, *)
 public class TzCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2507,6 +2534,7 @@ public class TzCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+@available(tvOS 13.0, *)
 public class HoldCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2563,6 +2591,7 @@ public class HoldCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+@available(tvOS 13.0, *)
 public class SuasCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2690,6 +2719,7 @@ public class SuasCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+@available(tvOS 13.0, *)
 public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2890,6 +2920,7 @@ public class ArfCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+@available(tvOS 13.0, *)
 public class VfrCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}
@@ -2996,6 +3027,7 @@ public class VfrCDU: DafifLoaderUtilities, CoreDataUtilities {
         print("\(#file) :: \(#function) :: complete")
     }
 }
+@available(tvOS 13.0, *)
 public class BdryCDU: DafifLoaderUtilities, CoreDataUtilities {
     
     public required init(){}

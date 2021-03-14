@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 import CoreData
 
-
+@available(tvOS 13.0, *)
 public class CoreDataLoader: ObservableObject, CoreDataUtilities {
     
     public static var shared = CoreDataLoader()

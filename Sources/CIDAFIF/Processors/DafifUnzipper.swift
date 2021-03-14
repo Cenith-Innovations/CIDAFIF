@@ -10,6 +10,7 @@ import SwiftUI
 import Zip
 import Combine
 
+@available(tvOS 13.0, *)
 public class DafifUnzipper: ObservableObject, BundleHelper, CoreDataUtilities {
     
     public static var shared = DafifUnzipper()
