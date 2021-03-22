@@ -1557,7 +1557,7 @@ public class ArptCDU: DafifLoaderUtilities, CoreDataUtilities {
                         entity.highHdg = property[3].toDouble
                         entity.lowHdg = property[4].toDouble
                         entity.length = property[5].toDouble
-                        entity.rwyWidth = property[6]
+                        entity.rwyWidth = property[6].toDouble
                         entity.surface = property[7]
                         entity.pcn = property[8]
                         entity.heWgsLat = property[9]

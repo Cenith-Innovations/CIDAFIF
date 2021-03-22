@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Acom" representedClassName="CIDAFIF.Acom" syncable="YES" codeGenerationType="class">
         <attribute name="arptIdent" optional="YES" attributeType="String"/>
         <attribute name="comFreq1" optional="YES" attributeType="String"/>
@@ -1162,7 +1162,7 @@
         <attribute name="lowHdg" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="lowIdent" optional="YES" attributeType="String"/>
         <attribute name="pcn" optional="YES" attributeType="String"/>
-        <attribute name="rwyWidth" optional="YES" attributeType="String"/>
+        <attribute name="rwyWidth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="surface" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Suas" representedClassName="CIDAFIF.Suas" syncable="YES" codeGenerationType="class">
@@ -1565,128 +1565,128 @@
         <attribute name="wptRvsm" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Pja" positionX="160" positionY="192" width="128" height="479"/>
-        <element name="AppcFluids" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="SuasPar" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="AppcCcIcao" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="Ils" positionX="160" positionY="192" width="128" height="479"/>
-        <element name="Anav" positionX="160" positionY="192" width="128" height="179"/>
-        <element name="Nav" positionX="160" positionY="192" width="128" height="509"/>
-        <element name="TrmMsa" positionX="160" positionY="192" width="128" height="344"/>
-        <element name="AppcSuasWx" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcEngagingDev" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="ArfAtc" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="AppcHeliType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AtsRmk" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="AppcDerivation" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsStatus" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="SuasCtry" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="IrCtry" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="Rwy" positionX="160" positionY="192" width="128" height="794"/>
-        <element name="ArfFt" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="SuasNote" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="AppcAtsType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsFreqClass" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcArUsageCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="TrmRmk" positionX="160" positionY="192" width="128" height="164"/>
-        <element name="Hnav" positionX="160" positionY="192" width="128" height="179"/>
-        <element name="AppcMtrCrsAlt" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="Bdry" positionX="160" positionY="192" width="128" height="449"/>
-        <element name="Hold" positionX="160" positionY="192" width="128" height="284"/>
-        <element name="PrPar" positionX="160" positionY="192" width="128" height="254"/>
-        <element name="Hlpt" positionX="160" positionY="192" width="128" height="314"/>
-        <element name="AppcArptType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="IrPar" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="VfrRte" positionX="160" positionY="192" width="128" height="269"/>
-        <element name="HlptRmk" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="BdryPar" positionX="160" positionY="192" width="128" height="329"/>
-        <element name="Pad" positionX="160" positionY="192" width="128" height="629"/>
-        <element name="MtrPar" positionX="160" positionY="192" width="128" height="164"/>
-        <element name="ArfSch" positionX="160" positionY="192" width="128" height="134"/>
-        <element name="AppcAtsWptDesc3" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcComFreqUnit" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcAtsWptDesc1" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="TrmSeg" positionX="160" positionY="192" width="128" height="1004"/>
-        <element name="Ats" positionX="160" positionY="192" width="128" height="719"/>
-        <element name="Suas" positionX="160" positionY="192" width="128" height="464"/>
+        <element name="Acom" positionX="160" positionY="192" width="128" height="389"/>
         <element name="AcomRmk" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="Agear" positionX="160" positionY="192" width="128" height="104"/>
-        <element name="TzPar" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="AppcFuelCodes" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="AppcTrmWptDesc1" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="Ortca" positionX="160" positionY="192" width="128" height="329"/>
-        <element name="AppcTrmWptDesc2" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="MtrOsm" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="AppcPjaType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcPjaOprTime" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmNavType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="Tz" positionX="160" positionY="192" width="128" height="449"/>
-        <element name="PjaPar" positionX="160" positionY="192" width="128" height="164"/>
-        <element name="AppcAtsWptDesc4" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="Arpt" positionX="160" positionY="192" width="128" height="404"/>
-        <element name="ArfPt" positionX="160" positionY="192" width="128" height="299"/>
-        <element name="Fueloil" positionX="160" positionY="192" width="128" height="134"/>
-        <element name="AppcTrmWptDesc3" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcUsStateCodes" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmWptDesc4" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmProc" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="Papp" positionX="160" positionY="192" width="128" height="464"/>
-        <element name="Pr" positionX="160" positionY="192" width="128" height="254"/>
-        <element name="TrmPar" positionX="160" positionY="192" width="128" height="239"/>
-        <element name="VfrRteRmk" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="Gen" positionX="160" positionY="192" width="128" height="224"/>
-        <element name="Wpt" positionX="160" positionY="192" width="128" height="419"/>
-        <element name="AppcAltitudeDesc" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="TrmClb" positionX="160" positionY="192" width="128" height="209"/>
-        <element name="VfrRteSeg" positionX="160" positionY="192" width="128" height="464"/>
-        <element name="AppcAcftCap" positionX="160" positionY="192" width="128" height="44"/>
-        <element name="AppcNavStatus" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="Ir" positionX="160" positionY="192" width="128" height="449"/>
-        <element name="Hcom" positionX="160" positionY="192" width="128" height="389"/>
         <element name="AddRwy" positionX="160" positionY="192" width="128" height="404"/>
+        <element name="Agear" positionX="160" positionY="192" width="128" height="104"/>
+        <element name="Anav" positionX="160" positionY="192" width="128" height="179"/>
         <element name="AppcAbsorbingSys" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcRwySfcCodes" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="TrmFdr" positionX="160" positionY="192" width="128" height="359"/>
+        <element name="AppcAcftCap" positionX="160" positionY="192" width="128" height="44"/>
+        <element name="AppcAltitudeDesc" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcArDir" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcArptType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcArType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcArUsageCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsFreqClass" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsStatus" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsWptDesc1" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsWptDesc2" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsWptDesc3" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcAtsWptDesc4" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcBdryType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcCcIcao" positionX="160" positionY="192" width="128" height="89"/>
+        <element name="AppcComFreqUnit" positionX="160" positionY="192" width="128" height="59"/>
         <element name="AppcComSymbols" positionX="160" positionY="192" width="128" height="59"/>
         <element name="AppcComType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="BdryCtry" positionX="160" positionY="192" width="128" height="149"/>
-        <element name="AppcNavType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AtsCtry" positionX="160" positionY="192" width="128" height="149"/>
         <element name="AppcDaylightSav" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcLclHorizDatums" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="MtrRmk" positionX="160" positionY="192" width="128" height="89"/>
-        <element name="AppcAtsWptDesc2" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcMtrUsageCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="TrmMin" positionX="160" positionY="192" width="128" height="509"/>
-        <element name="AppcPrAcftType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcArType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="ArfPar" positionX="160" positionY="192" width="128" height="374"/>
-        <element name="Mtr" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="AppcDerivation" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcEngagingDev" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcFluids" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcFuelCodes" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="AppcHeliType" positionX="160" positionY="192" width="128" height="59"/>
         <element name="AppcIlsCat" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcSuasType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="HcomRmk" positionX="160" positionY="192" width="128" height="134"/>
-        <element name="AppcRwyLgtCodes" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcIlsCompType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcTrmTrackCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcNavUsageCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcJasu" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="MtrOv" positionX="160" positionY="192" width="128" height="404"/>
         <element name="AppcIlsColctn" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcOils" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcWptUsageCd" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="ArfSeg" positionX="160" positionY="192" width="128" height="434"/>
-        <element name="ArfRmk" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="SvcRmk" positionX="160" positionY="192" width="128" height="119"/>
-        <element name="AppcPrPtType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcOprAgcy" positionX="160" positionY="192" width="128" height="74"/>
-        <element name="AppcBdryType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcArDir" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcShape" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="AppcWptType" positionX="160" positionY="192" width="128" height="59"/>
-        <element name="Acom" positionX="160" positionY="192" width="128" height="389"/>
-        <element name="AppcNavRcc" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcIlsCompType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcJasu" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcLclHorizDatums" positionX="160" positionY="192" width="128" height="74"/>
         <element name="AppcLevel" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcMtrCrsAlt" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcMtrUsageCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcNavRcc" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcNavStatus" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcNavType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcNavUsageCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcOils" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcOprAgcy" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcPjaOprTime" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcPjaType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcPrAcftType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcPrPtType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcRwyLgtCodes" positionX="160" positionY="192" width="128" height="74"/>
+        <element name="AppcRwySfcCodes" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcShape" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcSuasType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcSuasWx" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmNavType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmProc" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmTrackCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmWptDesc1" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmWptDesc2" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmWptDesc3" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcTrmWptDesc4" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcUsStateCodes" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcWptType" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="AppcWptUsageCd" positionX="160" positionY="192" width="128" height="59"/>
+        <element name="ArfAtc" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="ArfFt" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="ArfPar" positionX="160" positionY="192" width="128" height="374"/>
+        <element name="ArfPt" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="ArfRmk" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="ArfSch" positionX="160" positionY="192" width="128" height="134"/>
+        <element name="ArfSeg" positionX="160" positionY="192" width="128" height="434"/>
+        <element name="Arpt" positionX="160" positionY="192" width="128" height="404"/>
         <element name="ArptRmk" positionX="160" positionY="192" width="128" height="89"/>
+        <element name="Ats" positionX="160" positionY="192" width="128" height="719"/>
+        <element name="AtsCtry" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="AtsRmk" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="Bdry" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="BdryCtry" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="BdryPar" positionX="160" positionY="192" width="128" height="329"/>
+        <element name="Fueloil" positionX="160" positionY="192" width="128" height="134"/>
+        <element name="Gen" positionX="160" positionY="192" width="128" height="224"/>
+        <element name="Hcom" positionX="160" positionY="192" width="128" height="389"/>
+        <element name="HcomRmk" positionX="160" positionY="192" width="128" height="134"/>
+        <element name="Hlpt" positionX="160" positionY="192" width="128" height="314"/>
+        <element name="HlptRmk" positionX="160" positionY="192" width="128" height="89"/>
+        <element name="Hnav" positionX="160" positionY="192" width="128" height="179"/>
+        <element name="Hold" positionX="160" positionY="192" width="128" height="284"/>
+        <element name="Ils" positionX="160" positionY="192" width="128" height="479"/>
+        <element name="Ir" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="IrCtry" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="IrPar" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="Mtr" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="MtrOsm" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="MtrOv" positionX="160" positionY="192" width="128" height="404"/>
+        <element name="MtrPar" positionX="160" positionY="192" width="128" height="164"/>
+        <element name="MtrRmk" positionX="160" positionY="192" width="128" height="89"/>
+        <element name="Nav" positionX="160" positionY="192" width="128" height="509"/>
+        <element name="Ortca" positionX="160" positionY="192" width="128" height="329"/>
+        <element name="Pad" positionX="160" positionY="192" width="128" height="629"/>
+        <element name="Papp" positionX="160" positionY="192" width="128" height="464"/>
+        <element name="Pja" positionX="160" positionY="192" width="128" height="479"/>
+        <element name="PjaPar" positionX="160" positionY="192" width="128" height="164"/>
+        <element name="Pr" positionX="160" positionY="192" width="128" height="254"/>
+        <element name="PrPar" positionX="160" positionY="192" width="128" height="254"/>
+        <element name="Rwy" positionX="160" positionY="192" width="128" height="794"/>
+        <element name="Suas" positionX="160" positionY="192" width="128" height="464"/>
+        <element name="SuasCtry" positionX="160" positionY="192" width="128" height="149"/>
+        <element name="SuasNote" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="SuasPar" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="SvcRmk" positionX="160" positionY="192" width="128" height="119"/>
+        <element name="TrmClb" positionX="160" positionY="192" width="128" height="209"/>
+        <element name="TrmFdr" positionX="160" positionY="192" width="128" height="359"/>
+        <element name="TrmMin" positionX="160" positionY="192" width="128" height="509"/>
+        <element name="TrmMsa" positionX="160" positionY="192" width="128" height="344"/>
+        <element name="TrmPar" positionX="160" positionY="192" width="128" height="239"/>
+        <element name="TrmRmk" positionX="160" positionY="192" width="128" height="164"/>
+        <element name="TrmSeg" positionX="160" positionY="192" width="128" height="1004"/>
+        <element name="Tz" positionX="160" positionY="192" width="128" height="449"/>
+        <element name="TzPar" positionX="160" positionY="192" width="128" height="299"/>
+        <element name="VfrRte" positionX="160" positionY="192" width="128" height="269"/>
+        <element name="VfrRteRmk" positionX="160" positionY="192" width="128" height="89"/>
+        <element name="VfrRteSeg" positionX="160" positionY="192" width="128" height="464"/>
+        <element name="Wpt" positionX="160" positionY="192" width="128" height="419"/>
     </elements>
 </model>
