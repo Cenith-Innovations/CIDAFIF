@@ -25,6 +25,11 @@ extension BundleHelper {
     
     //MARK: - File Handling
     public func getData(from: String, inDir: Directory) -> [[String]] {
+        print("************* DIRECTORY ******************")
+        print(getUrl(inDir).appendingPathComponent(from))
+        let stuff = FileManager.default.contents(atPath: getUrl(inDir).appendingPathComponent(from).path)
+        print(stuff)
+        print("************************************")
         var contents: String = ""
         var result: [[String]] = []
         do {
