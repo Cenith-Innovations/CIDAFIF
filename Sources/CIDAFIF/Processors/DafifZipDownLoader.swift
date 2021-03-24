@@ -16,6 +16,9 @@ public class DafifDownloader: NSObject, ObservableObject, URLSessionDelegate, UR
     public var dataRequired: DafifDesired = .all
     
     public func downloadDafif(from dafifUrl: URL?) {
+        #if os(tvOS)
+        DafifUnzipper.shared.unZipDafif(data: DafifDownloader.shared.dataRequired)
+        #else
         DafifAPI.shared.errorDownloading = false
         guard let dafifLocation = dafifUrl else { return }
         let urlSession: URLSession = {
@@ -24,6 +27,7 @@ public class DafifDownloader: NSObject, ObservableObject, URLSessionDelegate, UR
         let request = URLRequest(url: dafifLocation)
         let task = urlSession.downloadTask(with: request)
         task.resume()
+        #endif
     }
     
     //Delegate functions

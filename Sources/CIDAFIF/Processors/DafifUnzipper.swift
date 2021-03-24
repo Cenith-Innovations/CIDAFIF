@@ -24,8 +24,13 @@ public class DafifUnzipper: ObservableObject, BundleHelper, CoreDataUtilities {
         DafifAPI.shared.errorUnzipping = false
         do {
             // MARK: 👉 DAFIF All Data
+            #if os(tvOS)
+            let dafifDatafilePath = Bundle.module.url(forResource: "DAFIF8", withExtension: "zip")
+            try Zip.unzipFile(dafifDatafilePath!, destination: getUrl(.dafifCoreDataMain), overwrite: true, password: nil, progress: progressUnzip(_:), fileOutputHandler: nil)
+            #else
             let dafifDatafilePath = getUrl(.dafifZipped)
             try Zip.unzipFile(dafifDatafilePath, destination: getUrl(.dafifCoreDataMain), overwrite: true, password: nil, progress: progressUnzip(_:), fileOutputHandler: nil)
+            #endif
             
             // MARK: 👉 DAFIF Version Information
             let dafifVersionfilePath = getUrl(.dafifVersionZipped)
@@ -52,6 +57,7 @@ public class DafifUnzipper: ObservableObject, BundleHelper, CoreDataUtilities {
         deleteAllFilesExcept("DAFIFT")
         CoreDataLoader.shared.loadSomeData(data: data)
     }
+    
 
 }
 

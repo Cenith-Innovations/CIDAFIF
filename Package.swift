@@ -10,6 +10,8 @@ let package = Package(
                 .tvOS(.v13)],
     products: [.library(name: "CIDAFIF", targets: ["CIDAFIF"])],
     dependencies: [.package(url: "https://github.com/Cenith-Innovations/Zip", .upToNextMajor(from: "1.0.0"))],
-    targets: [.target(name: "CIDAFIF", dependencies: ["Zip"]),
-              .testTarget(name: "CIDAFIFTests",dependencies: ["CIDAFIF"])]
+    targets: [.target(name: "CIDAFIF", dependencies: ["Zip"],resources: [.process("DAFIF8.zip")]),
+              .testTarget(name: "CIDAFIFTests",dependencies: ["CIDAFIF"])
+    ]
 )
+
