@@ -25,11 +25,6 @@ extension BundleHelper {
     
     //MARK: - File Handling
     public func getData(from: String, inDir: Directory) -> [[String]] {
-        print("************* DIRECTORY ******************")
-        print(getUrl(inDir).appendingPathComponent(from))
-        let stuff = FileManager.default.contents(atPath: getUrl(inDir).appendingPathComponent(from).path)
-        print(stuff)
-        print("************************************")
         var contents: String = ""
         var result: [[String]] = []
         do {
@@ -129,7 +124,11 @@ extension BundleHelper {
     
     public func getUrl(_ forLoc: Directory) -> URL {
         let fm = FileManager.default
+        #if os(tvOS)
+        let documents = fm.urls(for: .cachesDirectory, in: .userDomainMask)[0]
+        #else
         let documents = fm.urls(for:.documentDirectory, in: .userDomainMask)[0]
+        #endif
         let dafifCoreDataMainFolder = documents.appendingPathComponent("DafifCoreDataMain")
         switch forLoc {
         case .dafifCloud: return URL(string: "https://9ogv-filestorage.s3-us-west-2.amazonaws.com/DAFIF/DAFIF8.zip") ?? dafifCoreDataMainFolder
@@ -163,5 +162,4 @@ extension BundleHelper {
         case .vfr: return dafifCoreDataMainFolder.appendingPathComponent("DAFIFT/VFR")
         case .hold: return dafifCoreDataMainFolder.appendingPathComponent("DAFIFT/HOLD")
         }}
-
 }
