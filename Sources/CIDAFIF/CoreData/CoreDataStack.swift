@@ -31,15 +31,6 @@ public class CoreDataStack {
     
     public var moc: NSManagedObjectContext { pc.viewContext }
     
-    public func saveContext() {
-        if moc.hasChanges {
-            do {
-                try moc.save()
-            } catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }}}
-    
 }
 
 

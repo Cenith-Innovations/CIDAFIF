@@ -10,13 +10,9 @@ import Foundation
 
 public extension String {
     
-    var toDecimal: NSDecimalNumber { NSDecimalNumber(string: self) }
-    
     var errorNumber: Double { 9999 }
     
     var toDouble: Double { Double(self) ?? errorNumber }
-    
-    var toInt16: Int16 { Int16(self.description) ?? Int16(errorNumber) }
     
     func removeAllCharOf(_ str: String) -> String {
         let charR = Character(str)
@@ -31,12 +27,6 @@ public extension String {
     func subString(from: Int, to: Int) -> String {
         let startIndex = self.index(self.startIndex, offsetBy: from)
         let endIndex = self.index(self.startIndex, offsetBy: to)
-        return String(self[startIndex...endIndex])
-    }
-    
-    func subStringFrom(_ from: Int, offsetBy: Int) -> String {
-        let startIndex = self.index(self.startIndex, offsetBy: from)
-        let endIndex = self.index(startIndex, offsetBy: offsetBy)
         return String(self[startIndex...endIndex])
     }
     
@@ -61,20 +51,6 @@ public extension String {
         return df.date(from: self)
     }
     
-    var getPhoneNumber: String? {
-        let pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}"
-        if let range = self.range(of: pattern, options: .regularExpression) {
-            return String(self[range])
-        } else {
-            return nil
-        }
-    }
-    
-    func replaceFirst(_ number: Int, with: String) -> String {
-        let range = self.index(self.startIndex, offsetBy: number)
-        return self.replacingCharacters(in: self.startIndex..<range, with: with)
-    }
-    
     func indices(of: String) -> [Int] {
         var indices = [Int]()
         var position = startIndex
@@ -94,31 +70,8 @@ public extension String {
         return indices
     }
     
-    func ranges(of: String) -> [Range<String.Index>] {
-        let _indices = indices(of: of)
-        let count = of.count
-        return _indices.map({ index(startIndex, offsetBy: $0)..<index(startIndex, offsetBy: $0+count) })
-    }
-    
-    
-    func camelCased(with separator: Character) -> String {
-        return self.lowercased()
-            .split(separator: separator)
-            .enumerated()
-            .map { $0.offset > 0 ? $0.element.capitalized : $0.element.lowercased() }
-            .joined()
-    }
-    
     func capitalizingFirstLetter() -> String {
         return prefix(1).capitalized + dropFirst()
-    }
-    
-    mutating func capitalizeFirstLetter() {
-        self = self.capitalizingFirstLetter()
-    }
-    
-    func lowerCaseFirstLetter() -> String {
-        return self.prefix(1).lowercased() + dropFirst()
     }
     
 }

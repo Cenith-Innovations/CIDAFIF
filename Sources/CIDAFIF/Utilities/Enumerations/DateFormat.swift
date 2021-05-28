@@ -33,11 +33,6 @@ public enum DateFormat {
     case rcSupportEmailID
     case other(String)
 
-    @available(*, deprecated, renamed: "value")
-    public var rawValue: String {
-        return self.value
-    }
-
     public var value: String {
         switch self {
             case .dafifCycle: return "yyyy"

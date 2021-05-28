@@ -18,11 +18,6 @@ extension BundleHelper {
             print(try FileManager.default.contentsOfDirectory(at: getUrl(dir), includingPropertiesForKeys: nil, options: []))
         } catch { print(error) }}
     
-    public func printEverything() {
-        for i in Directory.allCases {
-            printContentsOf(i)
-        }}
-    
     //MARK: - File Handling
     public func getData(from: String, inDir: Directory) -> [[String]] {
         var contents: String = ""
@@ -73,18 +68,6 @@ extension BundleHelper {
         return result
     }
     
-    public func getUrls(of: URL) -> [URL] {
-        var result: [URL] = []
-        do {
-            let contents = try FileManager.default.contentsOfDirectory(at: of, includingPropertiesForKeys: nil, options: [])
-            for folderPath in contents {
-                let fileName = folderPath.lastPathComponent
-                if fileName.first != "." {
-                    result.append(folderPath)
-                }}} catch { print(error) }
-        return result
-    }
-    
     // MARK: - 🔅 DAFIF Version Date
     // TODO:⚠️ Get the VERSION file and send it through this
     public typealias DafifDates = (version: String, productionCycle: Date?,  effectiveDate: Date?, expirationDate: Date?, specificationEdition: Int?, specificationDate: Date?)
@@ -116,10 +99,6 @@ extension BundleHelper {
         }
         
         return (version: version, productionCycle: productionCycle,  effectiveDate: effectiveDate, expirationDate: expirationDate, specificationEdition: specificationEdition, specificationDate: specificationDate)
-    }
-    
-    public var listOfDafiftFolders: [String] {
-        ["HOLD", "ATS", "PR", "NAV", "SUPP", "BDRY", "WPT", "PAPP", "SUPPH", "TRM", "TZ", "TRMH", "ARPT", "MTR", "ARF", "ORTCA", "HLPT", "APPC", "SUAS", "PJA", "IR", "VFR"]
     }
     
     public func getUrl(_ forLoc: Directory) -> URL {
